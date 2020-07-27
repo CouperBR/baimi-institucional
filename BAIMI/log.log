@@ -1,0 +1,245 @@
+2020-07-13 18:24:47.5823 ERROR Erro durante a função de contactar.                       (BAIMI.Controllers.ContatoController.Contactar) (AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__11_0 => AsyncControllerActionInvoker.EndInvokeActionMethod => WrappedAsyncResultBase`1.End => WrappedAsyncResult`2.CallEndDelegate => <>c.<BeginInvokeSynchronousActionMethod>b__9_0 => ControllerActionInvoker.InvokeActionMethod => ReflectedActionDescriptor.Execute => ActionMethodDispatcher.Execute => <no type>.lambda_method => ContatoController.Contactar)                        System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+   em System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   em System.Data.Entity.DbContext.SaveChanges()
+   em BAIMI.Controllers.ContatoController.Contactar(contato contato) na C:\projetos\freelas\Baimi\website\BAIMI\BAIMI\Controllers\ContatoController.cs:linha 25
+2020-07-13 18:24:47.5823 ERROR Erro durante a função de contactar.                       (BAIMI.Controllers.ContatoController.Contactar)
+2020-07-13 18:24:56.3051 ERROR Erro durante a função de contactar.                       (BAIMI.Controllers.ContatoController.Contactar)
+2020-07-13 18:24:56.3051 ERROR Erro durante a função de contactar.                       (BAIMI.Controllers.ContatoController.Contactar) (AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__11_0 => AsyncControllerActionInvoker.EndInvokeActionMethod => WrappedAsyncResultBase`1.End => WrappedAsyncResult`2.CallEndDelegate => <>c.<BeginInvokeSynchronousActionMethod>b__9_0 => ControllerActionInvoker.InvokeActionMethod => ReflectedActionDescriptor.Execute => ActionMethodDispatcher.Execute => <no type>.lambda_method => ContatoController.Contactar)                        System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+   em System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   em System.Data.Entity.DbContext.SaveChanges()
+   em BAIMI.Controllers.ContatoController.Contactar(contato contato) na C:\projetos\freelas\Baimi\website\BAIMI\BAIMI\Controllers\ContatoController.cs:linha 25
+2020-07-13 18:26:43.7123 ERROR Erro durante a função de contactar.                       (BAIMI.Controllers.ContatoController.Contactar)
+2020-07-13 18:26:43.7123 ERROR Erro durante a função de contactar.                       (BAIMI.Controllers.ContatoController.Contactar) (AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__11_0 => AsyncControllerActionInvoker.EndInvokeActionMethod => WrappedAsyncResultBase`1.End => WrappedAsyncResult`2.CallEndDelegate => <>c.<BeginInvokeSynchronousActionMethod>b__9_0 => ControllerActionInvoker.InvokeActionMethod => ReflectedActionDescriptor.Execute => ActionMethodDispatcher.Execute => <no type>.lambda_method => ContatoController.Contactar)                        System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+   em System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   em System.Data.Entity.DbContext.SaveChanges()
+   em BAIMI.Controllers.ContatoController.Contactar(contato contato) na C:\projetos\freelas\Baimi\website\BAIMI\BAIMI\Controllers\ContatoController.cs:linha 25
+2020-07-13 18:28:12.7296 ERROR Erro durante a função de contactar.                       (BAIMI.Controllers.ContatoController.Contactar)
+2020-07-13 18:28:12.7296 ERROR Erro durante a função de contactar.                       (BAIMI.Controllers.ContatoController.Contactar) (AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__11_0 => AsyncControllerActionInvoker.EndInvokeActionMethod => WrappedAsyncResultBase`1.End => WrappedAsyncResult`2.CallEndDelegate => <>c.<BeginInvokeSynchronousActionMethod>b__9_0 => ControllerActionInvoker.InvokeActionMethod => ReflectedActionDescriptor.Execute => ActionMethodDispatcher.Execute => <no type>.lambda_method => ContatoController.Contactar)                        System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+   em System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   em System.Data.Entity.DbContext.SaveChanges()
+   em BAIMI.Controllers.ContatoController.Contactar(contato contato) na C:\projetos\freelas\Baimi\website\BAIMI\BAIMI\Controllers\ContatoController.cs:linha 25
+2020-07-13 18:28:35.5203 ERROR Erro durante a função de contactar.                       (BAIMI.Controllers.ContatoController.Contactar)
+2020-07-13 18:28:35.5203 ERROR Erro durante a função de contactar.                       (BAIMI.Controllers.ContatoController.Contactar) (AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__11_0 => AsyncControllerActionInvoker.EndInvokeActionMethod => WrappedAsyncResultBase`1.End => WrappedAsyncResult`2.CallEndDelegate => <>c.<BeginInvokeSynchronousActionMethod>b__9_0 => ControllerActionInvoker.InvokeActionMethod => ReflectedActionDescriptor.Execute => ActionMethodDispatcher.Execute => <no type>.lambda_method => ContatoController.Contactar)                        System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+   em System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   em System.Data.Entity.DbContext.SaveChanges()
+   em BAIMI.Controllers.ContatoController.Contactar(contato contato) na C:\projetos\freelas\Baimi\website\BAIMI\BAIMI\Controllers\ContatoController.cs:linha 25
+2020-07-13 18:36:45.0044 ERROR Erro durante a função de contactar.                       (BAIMI.Controllers.ContatoController.Contactar)
+2020-07-13 18:36:45.0044 ERROR Erro durante a função de contactar.                       (BAIMI.Controllers.ContatoController.Contactar) (AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__11_0 => AsyncControllerActionInvoker.EndInvokeActionMethod => WrappedAsyncResultBase`1.End => WrappedAsyncResult`2.CallEndDelegate => <>c.<BeginInvokeSynchronousActionMethod>b__9_0 => ControllerActionInvoker.InvokeActionMethod => ReflectedActionDescriptor.Execute => ActionMethodDispatcher.Execute => <no type>.lambda_method => ContatoController.Contactar)                        System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+   em System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   em System.Data.Entity.DbContext.SaveChanges()
+   em BAIMI.Controllers.ContatoController.Contactar(contato contato) na C:\projetos\freelas\Baimi\website\BAIMI\BAIMI\Controllers\ContatoController.cs:linha 25
+2020-07-13 18:42:51.6386 ERROR Erro durante a função de contactar.                       (BAIMI.Controllers.ContatoController.Contactar)
+2020-07-13 18:42:51.6386 ERROR Erro durante a função de contactar.                       (BAIMI.Controllers.ContatoController.Contactar) (AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__11_0 => AsyncControllerActionInvoker.EndInvokeActionMethod => WrappedAsyncResultBase`1.End => WrappedAsyncResult`2.CallEndDelegate => <>c.<BeginInvokeSynchronousActionMethod>b__9_0 => ControllerActionInvoker.InvokeActionMethod => ReflectedActionDescriptor.Execute => ActionMethodDispatcher.Execute => <no type>.lambda_method => ContatoController.Contactar)                        System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+   em System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   em System.Data.Entity.DbContext.SaveChanges()
+   em BAIMI.Controllers.ContatoController.Contactar(contato contato) na C:\projetos\freelas\Baimi\website\BAIMI\BAIMI\Controllers\ContatoController.cs:linha 25
+2020-07-13 18:52:50.2900 ERROR Erro durante a função de contactar.                       (BAIMI.Controllers.ContatoController.Contactar)
+2020-07-13 18:52:50.2900 ERROR Erro durante a função de contactar.                       (BAIMI.Controllers.ContatoController.Contactar) (AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__11_0 => AsyncControllerActionInvoker.EndInvokeActionMethod => WrappedAsyncResultBase`1.End => WrappedAsyncResult`2.CallEndDelegate => <>c.<BeginInvokeSynchronousActionMethod>b__9_0 => ControllerActionInvoker.InvokeActionMethod => ReflectedActionDescriptor.Execute => ActionMethodDispatcher.Execute => <no type>.lambda_method => ContatoController.Contactar)                        System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+   em System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   em System.Data.Entity.DbContext.SaveChanges()
+   em BAIMI.Controllers.ContatoController.Contactar(contato contato) na C:\projetos\freelas\Baimi\website\BAIMI\BAIMI\Controllers\ContatoController.cs:linha 25
+2020-07-14 17:59:48.2426 ERROR Erro durante a função de contactar.                       (BAIMI.Controllers.ContatoController.Contactar) (AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__11_0 => AsyncControllerActionInvoker.EndInvokeActionMethod => WrappedAsyncResultBase`1.End => WrappedAsyncResult`2.CallEndDelegate => <>c.<BeginInvokeSynchronousActionMethod>b__9_0 => ControllerActionInvoker.InvokeActionMethod => ReflectedActionDescriptor.Execute => ActionMethodDispatcher.Execute => <no type>.lambda_method => ContatoController.Contactar)                        System.Net.Mail.SmtpException: O tempo limite da operação foi atingido.
+   em System.Net.Mail.SmtpClient.Send(MailMessage message)
+   em BAIMI.Controllers.ContatoController.Contactar(contato contato) na C:\projetos\freelas\Baimi\website\BAIMI\BAIMI\Controllers\ContatoController.cs:linha 43
+2020-07-14 17:59:48.2426 ERROR Erro durante a função de contactar.                       (BAIMI.Controllers.ContatoController.Contactar)
+2020-07-14 19:05:53.7407 ERROR Erro ao fechar compra.                       (BAIMI.Controllers.ProdutoController.Checkout) (AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__11_0 => AsyncControllerActionInvoker.EndInvokeActionMethod => WrappedAsyncResultBase`1.End => WrappedAsyncResult`2.CallEndDelegate => <>c.<BeginInvokeSynchronousActionMethod>b__9_0 => ControllerActionInvoker.InvokeActionMethod => ReflectedActionDescriptor.Execute => ActionMethodDispatcher.Execute => <no type>.lambda_method => ProdutoController.Checkout)                        System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+   em System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   em System.Data.Entity.DbContext.SaveChanges()
+   em BAIMI.Controllers.ProdutoController.Checkout(compra compra) na C:\projetos\freelas\Baimi\website\BAIMI\BAIMI\Controllers\ProdutoController.cs:linha 298
+2020-07-14 19:05:53.7407 ERROR Erro ao fechar compra.                       (BAIMI.Controllers.ProdutoController.Checkout)
+2020-07-14 19:10:45.5591 ERROR Erro ao fechar compra.                       (BAIMI.Controllers.ProdutoController.Checkout) (AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__11_0 => AsyncControllerActionInvoker.EndInvokeActionMethod => WrappedAsyncResultBase`1.End => WrappedAsyncResult`2.CallEndDelegate => <>c.<BeginInvokeSynchronousActionMethod>b__9_0 => ControllerActionInvoker.InvokeActionMethod => ReflectedActionDescriptor.Execute => ActionMethodDispatcher.Execute => <no type>.lambda_method => ProdutoController.Checkout)                        System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+   em System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   em System.Data.Entity.DbContext.SaveChanges()
+   em BAIMI.Controllers.ProdutoController.Checkout(compra compra) na C:\projetos\freelas\Baimi\website\BAIMI\BAIMI\Controllers\ProdutoController.cs:linha 293
+2020-07-14 19:10:45.5591 ERROR Erro ao fechar compra.                       (BAIMI.Controllers.ProdutoController.Checkout)
+2020-07-14 19:13:22.2203 ERROR Erro ao fechar compra.                       (BAIMI.Controllers.ProdutoController.Checkout)
+2020-07-14 19:13:22.2203 ERROR Erro ao fechar compra.                       (BAIMI.Controllers.ProdutoController.Checkout) (AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__11_0 => AsyncControllerActionInvoker.EndInvokeActionMethod => WrappedAsyncResultBase`1.End => WrappedAsyncResult`2.CallEndDelegate => <>c.<BeginInvokeSynchronousActionMethod>b__9_0 => ControllerActionInvoker.InvokeActionMethod => ReflectedActionDescriptor.Execute => ActionMethodDispatcher.Execute => <no type>.lambda_method => ProdutoController.Checkout)                        System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.Entity.Core.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: A instrução INSERT conflitou com a restrição do FOREIGN KEY "produto_compra_compra". O conflito ocorreu no banco de dados "db-baimi", tabela "dbo.compra", column 'id'.
+A instrução foi finalizada.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   em System.Data.SqlClient.SqlDataReader.get_MetaData()
+   em System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   em System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   em System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   em System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   em System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<Reader>b__c(DbCommand t, DbCommandInterceptionContext`1 c)
+   em System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   em System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   em System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   em System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   em System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.Execute(Dictionary`2 identifierValues, List`1 generatedValues)
+   em System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction)
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update()
+   em System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__35()
+   em System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   em System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   em System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass2a.<SaveChangesInternal>b__27()
+   em System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   em System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   em System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+   em System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   em System.Data.Entity.DbContext.SaveChanges()
+   em BAIMI.Controllers.ProdutoController.Checkout(compra compra) na C:\projetos\freelas\Baimi\website\BAIMI\BAIMI\Controllers\ProdutoController.cs:linha 300
+2020-07-14 19:21:15.3204 ERROR Erro ao fechar compra.                       (BAIMI.Controllers.ProdutoController.Checkout)
+2020-07-14 19:21:15.3204 ERROR Erro ao fechar compra.                       (BAIMI.Controllers.ProdutoController.Checkout) (AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__11_0 => AsyncControllerActionInvoker.EndInvokeActionMethod => WrappedAsyncResultBase`1.End => WrappedAsyncResult`2.CallEndDelegate => <>c.<BeginInvokeSynchronousActionMethod>b__9_0 => ControllerActionInvoker.InvokeActionMethod => ReflectedActionDescriptor.Execute => ActionMethodDispatcher.Execute => <no type>.lambda_method => ProdutoController.Checkout)                        System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.Entity.Core.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: A instrução INSERT conflitou com a restrição do FOREIGN KEY "produto_compra_compra". O conflito ocorreu no banco de dados "db-baimi", tabela "dbo.compra", column 'id'.
+A instrução foi finalizada.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   em System.Data.SqlClient.SqlDataReader.get_MetaData()
+   em System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   em System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   em System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   em System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   em System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<Reader>b__c(DbCommand t, DbCommandInterceptionContext`1 c)
+   em System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   em System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   em System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   em System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   em System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.Execute(Dictionary`2 identifierValues, List`1 generatedValues)
+   em System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction)
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update()
+   em System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__35()
+   em System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   em System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   em System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass2a.<SaveChangesInternal>b__27()
+   em System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   em System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   em System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+   em System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   em System.Data.Entity.DbContext.SaveChanges()
+   em BAIMI.Controllers.ProdutoController.Checkout(compra compra) na C:\projetos\freelas\Baimi\website\BAIMI\BAIMI\Controllers\ProdutoController.cs:linha 300
+2020-07-14 19:25:03.9933 ERROR Erro ao fechar compra.                       (BAIMI.Controllers.ProdutoController.Checkout)
+2020-07-14 19:25:03.9933 ERROR Erro ao fechar compra.                       (BAIMI.Controllers.ProdutoController.Checkout) (AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__11_0 => AsyncControllerActionInvoker.EndInvokeActionMethod => WrappedAsyncResultBase`1.End => WrappedAsyncResult`2.CallEndDelegate => <>c.<BeginInvokeSynchronousActionMethod>b__9_0 => ControllerActionInvoker.InvokeActionMethod => ReflectedActionDescriptor.Execute => ActionMethodDispatcher.Execute => <no type>.lambda_method => ProdutoController.Checkout)                        System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.Entity.Core.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: A instrução INSERT conflitou com a restrição do FOREIGN KEY "produto_compra_compra". O conflito ocorreu no banco de dados "db-baimi", tabela "dbo.compra", column 'id'.
+A instrução foi finalizada.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   em System.Data.SqlClient.SqlDataReader.get_MetaData()
+   em System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   em System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   em System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   em System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   em System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<Reader>b__c(DbCommand t, DbCommandInterceptionContext`1 c)
+   em System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   em System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   em System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   em System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   em System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.Execute(Dictionary`2 identifierValues, List`1 generatedValues)
+   em System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction)
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update()
+   em System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__35()
+   em System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   em System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   em System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass2a.<SaveChangesInternal>b__27()
+   em System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   em System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   em System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+   em System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   em System.Data.Entity.DbContext.SaveChanges()
+   em BAIMI.Controllers.ProdutoController.Checkout(compra compra) na C:\projetos\freelas\Baimi\website\BAIMI\BAIMI\Controllers\ProdutoController.cs:linha 300
+2020-07-14 19:37:58.9801 ERROR Erro ao enviar email de nova compra                       (BAIMI.Controllers.ProdutoController.EnviarEmailNovaCompra)
+2020-07-14 19:37:58.9801 ERROR Erro ao enviar email de nova compra                       (BAIMI.Controllers.ProdutoController.EnviarEmailNovaCompra) (AsyncControllerActionInvoker.EndInvokeActionMethod => WrappedAsyncResultBase`1.End => WrappedAsyncResult`2.CallEndDelegate => <>c.<BeginInvokeSynchronousActionMethod>b__9_0 => ControllerActionInvoker.InvokeActionMethod => ReflectedActionDescriptor.Execute => ActionMethodDispatcher.Execute => <no type>.lambda_method => ProdutoController.Checkout => ProdutoController.EnviarEmailNovaCompra)                        System.Net.Mail.SmtpException: Falha ao enviar email. ---> System.IO.IOException: Não é possível ler os dados da conexão de transporte: Foi forçado o cancelamento de uma conexão existente pelo host remoto. ---> System.Net.Sockets.SocketException: Foi forçado o cancelamento de uma conexão existente pelo host remoto
+   em System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   em System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   em System.Net.FixedSizeReader.ReadPacket(Byte[] buffer, Int32 offset, Int32 count)
+   em System.Net.Security._SslStream.StartFrameHeader(Byte[] buffer, Int32 offset, Int32 count, AsyncProtocolRequest asyncRequest)
+   em System.Net.Security._SslStream.StartReading(Byte[] buffer, Int32 offset, Int32 count, AsyncProtocolRequest asyncRequest)
+   em System.Net.Security._SslStream.ProcessRead(Byte[] buffer, Int32 offset, Int32 count, AsyncProtocolRequest asyncRequest)
+   em System.Net.TlsStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   em System.Net.DelegatedStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   em System.Net.BufferedReadStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   em System.Net.Mail.SmtpReplyReaderFactory.ReadLines(SmtpReplyReader caller, Boolean oneLine)
+   em System.Net.Mail.ReadLinesCommand.Send(SmtpConnection conn)
+   em System.Net.Mail.SmtpConnection.GetConnection(ServicePoint servicePoint)
+   em System.Net.Mail.SmtpTransport.GetConnection(ServicePoint servicePoint)
+   em System.Net.Mail.SmtpClient.GetConnection()
+   em System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.Net.Mail.SmtpClient.Send(MailMessage message)
+   em BAIMI.Controllers.ProdutoController.EnviarEmailNovaCompra(compra compra) na C:\projetos\freelas\Baimi\website\BAIMI\BAIMI\Controllers\ProdutoController.cs:linha 333
+2020-07-14 19:38:35.7522 ERROR Erro ao fechar compra.                       (BAIMI.Controllers.ProdutoController.Checkout)
+2020-07-14 19:38:35.7522 ERROR Erro ao fechar compra.                       (BAIMI.Controllers.ProdutoController.Checkout) (AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__11_0 => AsyncControllerActionInvoker.EndInvokeActionMethod => WrappedAsyncResultBase`1.End => WrappedAsyncResult`2.CallEndDelegate => <>c.<BeginInvokeSynchronousActionMethod>b__9_0 => ControllerActionInvoker.InvokeActionMethod => ReflectedActionDescriptor.Execute => ActionMethodDispatcher.Execute => <no type>.lambda_method => ProdutoController.Checkout)                        System.ArgumentNullException: Valor não pode ser nulo.
+Nome do parâmetro: input
+   em System.Text.RegularExpressions.Regex.Replace(String input, String replacement)
+   em System.Text.RegularExpressions.Regex.Replace(String input, String pattern, String replacement)
+   em BAIMI.Controllers.ProdutoController.Checkout(compra compra) na C:\projetos\freelas\Baimi\website\BAIMI\BAIMI\Controllers\ProdutoController.cs:linha 293
+2020-07-14 19:39:57.4682 ERROR Erro ao enviar email de nova compra                       (BAIMI.Controllers.ProdutoController.EnviarEmailNovaCompra)
+2020-07-14 19:39:57.4682 ERROR Erro ao enviar email de nova compra                       (BAIMI.Controllers.ProdutoController.EnviarEmailNovaCompra) (AsyncControllerActionInvoker.EndInvokeActionMethod => WrappedAsyncResultBase`1.End => WrappedAsyncResult`2.CallEndDelegate => <>c.<BeginInvokeSynchronousActionMethod>b__9_0 => ControllerActionInvoker.InvokeActionMethod => ReflectedActionDescriptor.Execute => ActionMethodDispatcher.Execute => <no type>.lambda_method => ProdutoController.Checkout => ProdutoController.EnviarEmailNovaCompra)                        System.Net.Mail.SmtpException: Falha ao enviar email. ---> System.Net.WebException: O nome remoto não pôde ser resolvido: 'smtp.live.com'
+   em System.Net.ServicePoint.GetConnection(PooledStream PooledStream, Object owner, Boolean async, IPAddress& address, Socket& abortSocket, Socket& abortSocket6)
+   em System.Net.PooledStream.Activate(Object owningObject, Boolean async, GeneralAsyncDelegate asyncCallback)
+   em System.Net.PooledStream.Activate(Object owningObject, GeneralAsyncDelegate asyncCallback)
+   em System.Net.ConnectionPool.GetConnection(Object owningObject, GeneralAsyncDelegate asyncCallback, Int32 creationTimeout)
+   em System.Net.Mail.SmtpConnection.GetConnection(ServicePoint servicePoint)
+   em System.Net.Mail.SmtpTransport.GetConnection(ServicePoint servicePoint)
+   em System.Net.Mail.SmtpClient.GetConnection()
+   em System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.Net.Mail.SmtpClient.Send(MailMessage message)
+   em BAIMI.Controllers.ProdutoController.EnviarEmailNovaCompra(compra compra) na C:\projetos\freelas\Baimi\website\BAIMI\BAIMI\Controllers\ProdutoController.cs:linha 333
+2020-07-14 19:45:32.9902 ERROR Erro ao enviar email de nova compra                       (BAIMI.Controllers.ProdutoController.EnviarEmailNovaCompra)
+2020-07-14 19:45:32.9902 ERROR Erro ao enviar email de nova compra                       (BAIMI.Controllers.ProdutoController.EnviarEmailNovaCompra) (AsyncControllerActionInvoker.EndInvokeActionMethod => WrappedAsyncResultBase`1.End => WrappedAsyncResult`2.CallEndDelegate => <>c.<BeginInvokeSynchronousActionMethod>b__9_0 => ControllerActionInvoker.InvokeActionMethod => ReflectedActionDescriptor.Execute => ActionMethodDispatcher.Execute => <no type>.lambda_method => ProdutoController.Checkout => ProdutoController.EnviarEmailNovaCompra)                        System.Net.Mail.SmtpException: Falha ao enviar email. ---> System.Net.WebException: O nome remoto não pôde ser resolvido: 'smtp.live.com'
+   em System.Net.ServicePoint.GetConnection(PooledStream PooledStream, Object owner, Boolean async, IPAddress& address, Socket& abortSocket, Socket& abortSocket6)
+   em System.Net.PooledStream.Activate(Object owningObject, Boolean async, GeneralAsyncDelegate asyncCallback)
+   em System.Net.PooledStream.Activate(Object owningObject, GeneralAsyncDelegate asyncCallback)
+   em System.Net.ConnectionPool.GetConnection(Object owningObject, GeneralAsyncDelegate asyncCallback, Int32 creationTimeout)
+   em System.Net.Mail.SmtpConnection.GetConnection(ServicePoint servicePoint)
+   em System.Net.Mail.SmtpTransport.GetConnection(ServicePoint servicePoint)
+   em System.Net.Mail.SmtpClient.GetConnection()
+   em System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.Net.Mail.SmtpClient.Send(MailMessage message)
+   em BAIMI.Controllers.ProdutoController.EnviarEmailNovaCompra(compra compra) na C:\projetos\freelas\Baimi\website\BAIMI\BAIMI\Controllers\ProdutoController.cs:linha 333
+2020-07-14 19:53:08.4547 ERROR Erro ao enviar email de nova compra                       (BAIMI.Controllers.ProdutoController.EnviarEmailNovaCompra) (AsyncControllerActionInvoker.EndInvokeActionMethod => WrappedAsyncResultBase`1.End => WrappedAsyncResult`2.CallEndDelegate => <>c.<BeginInvokeSynchronousActionMethod>b__9_0 => ControllerActionInvoker.InvokeActionMethod => ReflectedActionDescriptor.Execute => ActionMethodDispatcher.Execute => <no type>.lambda_method => ProdutoController.Checkout => ProdutoController.EnviarEmailNovaCompra)                        System.Net.Mail.SmtpException: O tempo limite da operação foi atingido.
+   em System.Net.Mail.SmtpClient.Send(MailMessage message)
+   em BAIMI.Controllers.ProdutoController.EnviarEmailNovaCompra(compra compra) na C:\projetos\freelas\Baimi\website\BAIMI\BAIMI\Controllers\ProdutoController.cs:linha 333
+2020-07-14 19:53:08.4547 ERROR Erro ao enviar email de nova compra                       (BAIMI.Controllers.ProdutoController.EnviarEmailNovaCompra)

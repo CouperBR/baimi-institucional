@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Baimi | Site</title>
+    @Styles.Render("~/Content/css/normalize.css")
+    @Styles.Render("~/Content/css/bootstrap.min.css")
+    @Styles.Render("~/Content/css/main.css")
+</head>
+<body>
+
+    <!-- HEADER -->
+    @RenderBody()
+    <!-- Footer -->
+    @*<footer class="page-footer font-small" id="footer">
+            <div class="footer-copyright">
+                <img src="@Url.Content("~/Content/images/logo-baimi.png")" class="img-fluid" alt="Responsive image">
+            </div>
+        </footer>*@
+    <!-- Footer -->
+
+    <input type="hidden" id="success"
+           value="@TempData["success"]" />
+    <input type="hidden" id="info"
+           value="@TempData["info"]" />
+    <input type="hidden" id="warning"
+           value="@TempData["warning"]" />
+    <input type="hidden" id="error"
+           value="@TempData["error"]" />
+    @Scripts.Render("~/Content/js/jquery.min.js")
+    @Scripts.Render("~/Content/js/bootstrap.min.js")
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    @Scripts.Render("~/Content/js/main.js")
+</body>
+
+</html>

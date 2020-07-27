@@ -1,0 +1,330 @@
+﻿@model BAIMI.Context.produto
+
+@{
+    ViewBag.Title = "VerProduto";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section>
+    <div class="container-fluid destaque-azul" id="product-first-destaque">
+        <div class="d-flex justify-content-center">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <h1>SIMULE AGORA A FORMA DE PAGAMENTO</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid destaque-vermelho" id="product-second-destaque">
+        <div class="">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center">
+                    <div>
+                        <p class="h2">EM ATÉ 3H57MIN</p>
+                        <p class="h1">NA SUA CASA</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12">
+                    <img src="@Url.Content("~/Content/Images/logotipo-baimi.png")" class="img-fluid mx-auto d-block" alt="Responsive image">
+                </div>
+                <div class="col-lg-5 col-md-12 col-sm-12">
+                    <p class="h5">XIAOMI 100% ORIGINAL NA VERSÃO GLOBAL</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container border" id="product-div">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="border" id="product-image">
+                    <img src="@Url.Content("~/uploads/"+ Model.url_foto)" class="img-fluid mx-auto d-block" alt="">
+                </div>
+            </div>
+            <div class="col-md-6" id="product-specifications">
+                @try
+                {
+                    var parcelas = Model.numero_max_parcelas != null ? Model.numero_max_parcelas : 12;
+                    var valorDividido = Model.valor / parcelas;
+                    var porcentagem = ((decimal)20 / 100) * Model.valor;
+                    var descontoAVista = ((decimal)Model.desconto_avista / 100) * Model.valor;
+                    <p class="sold">@Model.vendidos VENDIDOS</p>
+                    <p class="product-title h1">@Model.nome <span class="gigabytes">128 GB</span></p>
+                    <p class="description h5">@Model.descricao_curta</p>
+                    if (Model.entrega_gratis == null || Convert.ToBoolean(Model.entrega_gratis))
+                    {<p class="free-shipping h3">ENTREGA GRÁTIS!</p>}
+                    <p class="portion h2">12X de</p>
+                    <p class="amount h1">R$149,90</p>
+                    <br>
+                    <p class="in-cash h4">A VISTA (15% OFF): R$1799,00</p>
+                }
+                catch (Exception ex)
+                {
+
+                }
+                <div class="form-group">
+                    <label for="paymentType" style="font-family: 'Gothan';">Quantidade</label>
+                    <input class="form-control" type="number" value="1" max="10" id="example-number-input">
+                    <label for="paymentType" style="font-family: 'Gothan';">Forma de Pagamento</label>
+                    <select class="form-control" id="paymentType">
+                        @*<option>Site</option>*@
+                        <option>Presencial</option>
+                    </select>
+                </div>
+                <div class="row botoes-compra">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <form action="/Produto/comprar" method="post">
+                            @Html.HiddenFor(m => m.id)
+                            <button class="btn btn-default rounded-pill btn-lg buy" type="submit">COMPRAR AGORA</button>
+                        </form>
+                        
+                    </div>
+                    @*<div class="col-lg-6 col-md-12 col-sm-12">
+                        <button class="btn btn-default rounded-pill btn-lg add-cart" type="submit">
+                            ADICIONAR AO
+                            CARRINHO
+                        </button>
+                    </div>*@
+                </div>
+                <button type="button" class="btn btn-danger btn-lg btn-block rounded-pill simulate">
+                    simule agora o
+                    seu pagamento
+                </button>
+            </div>
+            <div class="container" id="selos">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="text-center">
+                            <img src="@Url.Content("~/Content/Images/selo1.png")" class="" alt="Responsive image">
+                            <img src="@Url.Content("~/Content/Images/selo2.png")" class="" alt="Responsive image">
+                            <img src="@Url.Content("~/Content/Images/selo3.png")" class="" alt="Responsive image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <p class="h4 features text-center">Características</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis imperdiet tellus, in
+                    porttitor urna ultrices eu. Aliquam et magna vel massa blandit euismod. Donec elit lorem,
+                    vulputate ut posuere in, pretium a est. Etiam accumsan congue tellus, a pretium leo tincidunt
+                    et. Curabitur imperdiet maximus dui ac dignissim. Pellentesque sed commodo nisi. In hac
+                    habitasse platea dictumst. Integer vitae nibh varius, sollicitudin tortor quis, faucibus ex.
+                    Etiam cursus eros leo, id condimentum justo imperdiet ut. Ut non pellentesque nibh, ut volutpat
+                    eros. Praesent posuere eget mi at ultricies.
+
+                    Fusce felis eros, dapibus eu consequat eget, mattis gravida mauris. Interdum et malesuada fames
+                    ac ante ipsum primis in faucibus. Proin pulvinar quis sem ac feugiat. Sed ornare scelerisque
+                    leo, at auctor eros faucibus posuere. Nullam efficitur pulvinar mollis. Curabitur dapibus sapien
+                    ac libero fermentum dignissim. Donec viverra rhoncus mauris, ut malesuada enim varius congue.
+
+                    Suspendisse blandit odio pulvinar quam imperdiet, quis aliquam risus laoreet. Nullam iaculis,
+                    risus eget pulvinar elementum, nunc dui maximus mauris, eu vehicula arcu ex ut arcu. Phasellus
+                    ac dapibus est. Donec tempus tellus sit amet purus feugiat elementum. Pellentesque a efficitur
+                    diam. Mauris vehicula sagittis mattis. Etiam sit amet nisl lacinia, condimentum justo lobortis,
+                    bibendum nunc. Vivamus finibus pellentesque risus eget ultricies. Donec et augue cursus, congue
+                    mauris a, maximus est. Maecenas malesuada sodales mauris, eu pretium quam tristique at.
+
+                    Donec lobortis quam nec elit posuere maximus. Aenean laoreet aliquet augue nec hendrerit.
+                    Aliquam congue sem efficitur, consectetur erat nec, pulvinar nulla. Nunc eu egestas ligula, sed
+                    auctor nunc. Pellentesque et ultricies arcu. Etiam scelerisque dui eget nisi consequat, feugiat
+                    dapibus magna accumsan. Vestibulum vel neque felis. Vestibulum vestibulum ligula aliquet, mattis
+                    metus ut, dignissim odio. Phasellus bibendum dignissim sapien, a rutrum velit ornare id. Nunc a
+                    feugiat est, sed tempor nulla. Maecenas faucibus a ex non cursus. Suspendisse sapien mi, aliquet
+                    at arcu eu, venenatis tempus risus. Praesent mattis condimentum justo, eu ornare mauris
+                    dignissim vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt metus et
+                    tellus congue pharetra. Donec ut est vel diam pharetra efficitur.
+                </p>
+            </div>
+            <div class="container">
+                <p class="h4 features text-center">Descrição</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis imperdiet tellus, in
+                    porttitor urna ultrices eu. Aliquam et magna vel massa blandit euismod. Donec elit lorem,
+                    vulputate ut posuere in, pretium a est. Etiam accumsan congue tellus, a pretium leo tincidunt
+                    et. Curabitur imperdiet maximus dui ac dignissim. Pellentesque sed commodo nisi. In hac
+                    habitasse platea dictumst. Integer vitae nibh varius, sollicitudin tortor quis, faucibus ex.
+                    Etiam cursus eros leo, id condimentum justo imperdiet ut. Ut non pellentesque nibh, ut volutpat
+                    eros. Praesent posuere eget mi at ultricies.
+
+                    Fusce felis eros, dapibus eu consequat eget, mattis gravida mauris. Interdum et malesuada fames
+                    ac ante ipsum primis in faucibus. Proin pulvinar quis sem ac feugiat. Sed ornare scelerisque
+                    leo, at auctor eros faucibus posuere. Nullam efficitur pulvinar mollis. Curabitur dapibus sapien
+                    ac libero fermentum dignissim. Donec viverra rhoncus mauris, ut malesuada enim varius congue.
+
+                    Suspendisse blandit odio pulvinar quam imperdiet, quis aliquam risus laoreet. Nullam iaculis,
+                    risus eget pulvinar elementum, nunc dui maximus mauris, eu vehicula arcu ex ut arcu. Phasellus
+                    ac dapibus est. Donec tempus tellus sit amet purus feugiat elementum. Pellentesque a efficitur
+                    diam. Mauris vehicula sagittis mattis. Etiam sit amet nisl lacinia, condimentum justo lobortis,
+                    bibendum nunc. Vivamus finibus pellentesque risus eget ultricies. Donec et augue cursus, congue
+                    mauris a, maximus est. Maecenas malesuada sodales mauris, eu pretium quam tristique at.
+
+                    Donec lobortis quam nec elit posuere maximus. Aenean laoreet aliquet augue nec hendrerit.
+                    Aliquam congue sem efficitur, consectetur erat nec, pulvinar nulla. Nunc eu egestas ligula, sed
+                    auctor nunc. Pellentesque et ultricies arcu. Etiam scelerisque dui eget nisi consequat, feugiat
+                    dapibus magna accumsan. Vestibulum vel neque felis. Vestibulum vestibulum ligula aliquet, mattis
+                    metus ut, dignissim odio. Phasellus bibendum dignissim sapien, a rutrum velit ornare id. Nunc a
+                    feugiat est, sed tempor nulla. Maecenas faucibus a ex non cursus. Suspendisse sapien mi, aliquet
+                    at arcu eu, venenatis tempus risus. Praesent mattis condimentum justo, eu ornare mauris
+                    dignissim vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt metus et
+                    tellus congue pharetra. Donec ut est vel diam pharetra efficitur.
+                </p>
+            </div>
+            <div class="container">
+                <p class="h4 features text-center">Avaliações</p>
+                <div class="row evaluations">
+                    <div class="col-lg-4">
+                        <div class="evaluation-box border">
+                            <p class="name-evaluation h4 text-center">
+                                FULANO DE TAL
+                            </p>
+                            <p class="text-evaluation">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis imperdiet
+                                tellus, in porttitor urna ultrices eu. Aliquam et magna vel massa blandit euismod.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis imperdiet
+                                tellus, in porttitor urna ultrices eu. Aliquam et magna vel massa blandit euismod.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="evaluation-box border">
+                            <p class="name-evaluation h4 text-center">
+                                FULANO DE TAL
+                            </p>
+                            <p class="text-evaluation">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis imperdiet
+                                tellus, in porttitor urna ultrices eu. Aliquam et magna vel massa blandit euismod.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis imperdiet
+                                tellus, in porttitor urna ultrices eu. Aliquam et magna vel massa blandit euismod.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="evaluation-box border">
+                            <p class="name-evaluation h4 text-center">
+                                FULANO DE TAL
+                            </p>
+                            <p class="text-evaluation">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis imperdiet
+                                tellus, in porttitor urna ultrices eu. Aliquam et magna vel massa blandit euismod.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis imperdiet
+                                tellus, in porttitor urna ultrices eu. Aliquam et magna vel massa blandit euismod.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container-fluid" id="destaque-talk-us">
+        <div class="row">
+            <div class="col-xl-2 col-lg-3 col-md-2 col-sm-12">
+                <img src="@Url.Content("~/Content/images/logotipo-baimi.png")" class="img-fluid" alt="Responsive image">
+            </div>
+            <div class="col-xl-10 col-lg-9 col-md-8 col-sm-12">
+                <h1>FALA COM A GENTE !</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <!--Section heading-->
+        <h2 class="h1-responsive font-weight-bold text-center my-4">Entre em contato</h2>
+        <!--Section description-->
+        <p class="text-center w-responsive mx-auto mb-5">
+            Você tem alguma pergunta? Por favor, não hesite em nos contatar imediatamente.
+            Nossa equipe entrará em contato com você em questão de horas para ajudá-lo.
+        </p>
+        <div class="row">
+            <!--Grid column-->
+            <div class="col-md-9 mb-md-0 mb-5">
+                <form id="contact-form" class="needs-validation" novalidate name="contact-form">
+                    <!--Grid row-->
+                    <div class="row">
+                        <!--Grid column-->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <label for="name" class="">Nome</label>
+                                <input required type="text" id="name" name="nome" class="form-control">
+                                <div class="invalid-feedback">
+                                    campo deve ser informado.
+                                </div>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+                        <!--Grid column-->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <label for="email" class="">E-mail</label>
+                                <input required type="email" id="email" name="email" class="form-control">
+                                <div class="invalid-feedback">
+                                    campo deve ser informado.
+                                </div>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                    <!--Grid row-->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="md-form mb-0">
+                                <label for="subject" class="">Assunto</label>
+                                <input required type="text" id="subject" name="assunto" class="form-control">
+                                <div class="invalid-feedback">
+                                    campo deve ser informado.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Grid row-->
+                    <!--Grid row-->
+                    <div class="row">
+                        <!--Grid column-->
+                        <div class="col-md-12">
+                            <div class="md-form">
+                                <label for="message">Mensagem</label>
+                                <textarea required type="text" id="message" name="mensagem" rows="2"
+                                          class="form-control md-textarea"></textarea>
+                                <div class="invalid-feedback">
+                                    campo deve ser informado.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Grid row-->
+                    <div class="text-center text-md-left">
+                        <br>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </form>
+
+                <div class="status"></div>
+            </div>
+            <!--Grid column-->
+            <!--Grid column-->
+            <div class="col-md-3 text-center">
+                <ul class="list-unstyled mb-0">
+                    <li>
+                        <i class="fas fa-map-marker-alt fa-2x"></i>
+                        <p>Salvador, BA, Brasil</p>
+                    </li>
+
+                    <li>
+                        <i class="fas fa-phone mt-4 fa-2x"></i>
+                        <p>(71) 9 9161-0289</p>
+                    </li>
+
+                    <li>
+                        <i class="fas fa-envelope mt-4 fa-2x"></i>
+                        <p>email@baimi.com.br</p>
+                    </li>
+                </ul>
+            </div>
+            <!--Grid column-->
+        </div>
+    </div>
+</section>
+

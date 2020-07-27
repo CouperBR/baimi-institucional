@@ -1,0 +1,285 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<section>
+    <div class="container-fluid second-section">
+    </div>
+</section>
+<section>
+    <div class="container-xl" id="icons-container">
+        <div class="row">
+            <div class="col-lg-3 col-sm-6">
+                <div class="icon-container float-left">
+                    <img src="@Url.Content("~/Content/images/icon-foguete.png")" class="img-fluid rounded mx-auto d-block" alt="Responsive image">
+                </div>
+                <div class="text-container">
+                    <p>FRETE GRÁTIS</p>
+                    <span>
+                        Entrega rápida <br>
+                        segura e gratuita.
+                    </span>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="icon-container float-left">
+                    <img style="margin: 25px;" src="@Url.Content("~/Content/images/icon-carteira.png")" class="img-fluid rounded mx-auto d-block" alt="Responsive image">
+                </div>
+                <div class="text-container">
+                    <p>ATÉ 12X SEM JUROS</p>
+                    <span>
+                        Aceitamos todos os cartões<br>
+                        e parcelamos sem juros.
+                    </span>
+                </div>
+            </div>
+            <div class="col-lg-5 col-sm-12">
+                <div class="icon-container float-left">
+                    <img src="@Url.Content("~/Content/images/icon-protecao.png")" class="img-fluid rounded mx-auto d-block" alt="Responsive image">
+                </div>
+                <div class="text-container">
+                    <p>100% ORIGINAIS</p>
+                    <span>
+                        Produtos originais, na versão <br>
+                        global, com garantinha de 01 ano.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container-fluid">
+        <div class="row" id="conheca">
+            <div class="col-md-2 col-sm-12">
+                <img src="@Url.Content("~/Content/images/logotipo-baimi.png")" class="img-fluid" alt="Responsive image">
+            </div>
+            <div class="col-md-5 col-sm-12">
+                <h1>CONHEÇA<br> NOSSOS PRODUTOS</h1>
+            </div>
+            <div class="col-md-5 col-sm-12 mx-auto">
+                <h4>XIAOMI 100% ORIGINAL NA VERSÃO GLOBAL</h4>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container" id="banner">
+        <img src="@Url.Content("~/Content/images/Banner-paginicial.png")" class="img-fluid" alt="Responsive image">
+    </div>
+</section>
+<section>
+    <div class="container" id="produtos">
+        <div class="row" id="filter">
+            <div class="col-md-4 col-sm-6">
+                <span>FILTRO</span>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <span>ORDENAR POR</span>
+            </div>
+        </div>
+        <!-- PRODUTOS -->
+        <div class="row">
+            @if (ViewBag.Produtos != null)
+            {
+                foreach (var produto in ViewBag.Produtos)
+                {
+                    try
+                    {
+                        var parcelas = produto.numero_max_parcelas != null ? produto.numero_max_parcelas : 12;
+                        var valorDividido = produto.valor / parcelas;
+                        var porcentagem = ((decimal)20 / 100) * produto.valor;
+                        var descontoAVista = ((decimal)produto.desconto_avista / 100) * produto.valor;
+                        <div class="col-md-4 col-sm-12 product">
+                            <img src="@Url.Content("~/uploads/"+ produto.url_foto)" alt="..." class="float-left product-img">
+                            <h5 class="product-title">@produto.nome </h5>
+                            @if (produto.entrega_gratis == null || produto.entrega_gratis)
+                            {<span class="free-shipping">ENTREGA GRÁTIS!</span>}
+
+                            <h5 class="portion">@(parcelas)X de</h5>
+                            <h4 class="amount">@(valorDividido.ToString("C")) </h4>
+                            <span class="in-cash">À Vista (@(produto.desconto_avista)%OFF): R$ @(produto.valor - descontoAVista)</span>
+                            <div class="col text-center">
+                                <a href="/Produto/VerProduto/@produto.id"><button type="button" class="btn btn-primary rounded-pill buy-now">COMPRE AGORA</button></a>
+                            </div>
+                        </div>
+                    }
+                    catch (Exception)
+                    {
+
+                    }
+                }
+            }
+        </div>
+        <!-- PRODUTOS -->
+        <div class="container" id="selos">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-center">
+                        <img src="@Url.Content("~/Content/images/selo1.png")" class="" alt="Responsive image">
+                        <img src="@Url.Content("~/Content/images/selo2.png")" class="" alt="Responsive image">
+                        <img src="@Url.Content("~/Content/images/selo3.png")" class="" alt="Responsive image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container-fluid destaque-azul" id="destaque-aboutus">
+        <div class="row">
+            <div class="col-xl-2 col-lg-3 col-md-2 col-sm-12">
+                <img src="@Url.Content("~/Content/images/logotipo-baimi.png")" class="img-fluid" alt="Responsive image">
+            </div>
+            <div class="col-xl-5 col-lg-4 col-md-5 col-sm-12">
+                <h1>DESDE O INÍCIO <br> COM AMOR E CARINHO</h1>
+            </div>
+            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 mx-auto">
+                <h5>SAIBA UM POUCO MAIS SOBRE NÓS</h5>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center" id="menu-about-us">
+        <ul class="list-inline mx-auto text-center">
+            <li class="list-inline-item menu-item-red-line">NOSSA HISTÓRIA</li>
+            <li class="list-inline-item">NOSSOS CLIENTES</li>
+            <li class="list-inline-item">NOSSOS PROPÓSITOS</li>
+            <li class="list-inline-item">NOSSOS LEMAS</li>
+        </ul>
+    </div>
+    <div class="container" id="about-us">
+        <div class="row">
+            <div class="col-md-8 col-sm-12">
+                <p>Seu celular na sua mão em até 4 horas.</p>
+                <p>Simples assim. <br> Seu celular na sua mão em até 4 horas</p>
+                <p>Simples assim.</p>
+                <p>
+                    Somos o melhor de uma loja física, unida à tecnologia e velocidade do mundo digital.
+                    Aqui voce escolhe seu celular, faz seu pedido, recebe até 4 horas após a confirmação do pedido.
+                    Ahh, e só precisa pagar na hora que você receber.
+                </p>
+                <p>Você não tem que esperar 15, 30 ou 90 dias para receber seu produto.</p>
+                <p>
+                    Você escolhe hoje e recebe hoje! <br>
+                    Somos o melhor de uma loja física, unida à tecnologia e velocidade do mundo digital.
+                    Aqui você escolhe seu celular, faz seu pedido, recebe até 4 horas após a confirmação do pedido.
+                    Ahh, e só precisa pagar na hora que você receber.
+                </p>
+                <p>Você não tem que esperar 15, 30 ou 90 dias para receber o seu produto.</p>
+                <p>Você escolhe hoje e recebe hoje!</p>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                ...
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container-fluid" id="destaque-talk-us">
+        <div class="row">
+            <div class="col-xl-2 col-lg-3 col-md-2 col-sm-12">
+                <img src="@Url.Content("~/Content/images/logotipo-baimi.png")" class="img-fluid" alt="Responsive image">
+            </div>
+            <div class="col-xl-10 col-lg-9 col-md-8 col-sm-12">
+                <h1>FALA COM A GENTE !</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <!--Section heading-->
+        <h2 class="h1-responsive font-weight-bold text-center my-4">Entre em contato</h2>
+        <!--Section description-->
+        <p class="text-center w-responsive mx-auto mb-5">
+            Você tem alguma pergunta? Por favor, não hesite em nos contatar imediatamente.
+            Nossa equipe entrará em contato com você em questão de horas para ajudá-lo.
+        </p>
+        <div class="row">
+            <!--Grid column-->
+            <div class="col-md-9 mb-md-0 mb-5">
+                <form id="contact-form" class="needs-validation" novalidate name="contact-form">
+                    <!--Grid row-->
+                    <div class="row">
+                        <!--Grid column-->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <label for="name" class="">Nome</label>
+                                <input required type="text" id="name" name="nome" class="form-control">
+                                <div class="invalid-feedback">
+                                    campo deve ser informado.
+                                </div>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+                        <!--Grid column-->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <label for="email" class="">E-mail</label>
+                                <input required type="email" id="email" name="email" class="form-control">
+                                <div class="invalid-feedback">
+                                    campo deve ser informado.
+                                </div>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                    <!--Grid row-->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="md-form mb-0">
+                                <label for="subject" class="">Assunto</label>
+                                <input required type="text" id="subject" name="assunto" class="form-control">
+                                <div class="invalid-feedback">
+                                    campo deve ser informado.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Grid row-->
+                    <!--Grid row-->
+                    <div class="row">
+                        <!--Grid column-->
+                        <div class="col-md-12">
+                            <div class="md-form">
+                                <label for="message">Mensagem</label>
+                                <textarea required type="text" id="message" name="mensagem" rows="2"
+                                          class="form-control md-textarea"></textarea>
+                                <div class="invalid-feedback">
+                                    campo deve ser informado.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Grid row-->
+                    <div class="text-center text-md-left">
+                        <br>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </form>
+
+                <div class="status"></div>
+            </div>
+            <!--Grid column-->
+            <!--Grid column-->
+            <div class="col-md-3 text-center">
+                <ul class="list-unstyled mb-0">
+                    <li>
+                        <i class="fas fa-map-marker-alt fa-2x"></i>
+                        <p>Salvador, BA, Brasil</p>
+                    </li>
+
+                    <li>
+                        <i class="fas fa-phone mt-4 fa-2x"></i>
+                        <p>(71) 9 9161-0289</p>
+                    </li>
+
+                    <li>
+                        <i class="fas fa-envelope mt-4 fa-2x"></i>
+                        <p>email@baimi.com.br</p>
+                    </li>
+                </ul>
+            </div>
+            <!--Grid column-->
+        </div>
+    </div>
+</section>

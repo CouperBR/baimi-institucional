@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewBag.Title = "Checkout";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section>
+    <div class="container-fluid destaque-azul" id="completed-destaque">
+        <div class="d-flex justify-content-center">
+            <div class="row">
+                <div class="col-md-2 col-sm-12">
+                    <img src="@Url.Content("~/Content/images/logotipo-baimi.png")" class="img-fluid" alt="Responsive image">
+                </div>
+                <div class="col-md-8 col-sm-12">
+                    <p class="h1">COMPRA CONCLUÍDA!</p>
+                </div>
+                <div class="col-md-2 col-sm-12">
+                    <img src="@Url.Content("~/Content/images/logotipo-baimi.png")" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid destaque-vermelho" id="complete-red-destaque">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 text-center">
+                <p class="h3">SORRISO NO ROSTO QUE DENTRO DE INSTANTES</p>
+                <p class="h3">O SEU APARELHO NOVO ESTARÁ CHEGANDO! :)</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <img src="@Url.Content("~/Content/images/completed-order-woman.png")" class="img-fluid rounded mx-auto d-block" id="woman-completed-order" alt="Responsive image">
+    </div>
+</section>
+
+<script>
+    setTimeout(function () {
+        iziToast.success({
+            title: 'Aguarde',
+            message: 'Em breve entraremos em contato.',
+            position: 'topCenter',
+            timeout: 20000
+        });
+    }, 750);
+</script>

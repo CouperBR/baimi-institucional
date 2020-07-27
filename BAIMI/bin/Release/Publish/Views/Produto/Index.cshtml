@@ -1,0 +1,84 @@
+﻿@model IEnumerable<BAIMI.Context.produto>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<p>
+    @Html.ActionLink("Criar novo", "Create", new object { },
+new { @class = "btn btn-primary" })
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.descricao_curta)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.vendidos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.valor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.desconto_avista)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.caracteristicas)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.descricao_longa)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.url_foto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.entrega_gratis)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.descricao_curta)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.vendidos)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.valor)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.desconto_avista)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.caracteristicas)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.descricao_longa)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.url_foto)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.entrega_gratis)
+                </td>
+                <td>
+                    @Html.ActionLink("Editar", "Edit", new { id = item.id }) |
+                    @Html.ActionLink("Detalhes", "Details", new { id = item.id }) |
+                    @Html.ActionLink("Excluir", "Delete", new { id = item.id })
+                </td>
+            </tr>
+        }
+        </tbody>
+</table>

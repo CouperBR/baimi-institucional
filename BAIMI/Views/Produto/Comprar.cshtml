@@ -1,0 +1,139 @@
+﻿@model BAIMI.Context.produto
+
+@{
+    ViewBag.Title = "Comprar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section>
+    <div class="container-fluid destaque-azul" id="product-first-destaque">
+        <div class="d-flex justify-content-center">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <!-- <h1>SIMULE AGORA A FORMA DE PAGAMENTO</h1> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid destaque-vermelho" id="complete-red-destaque">
+        <div class="">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 text-center">
+                    <p class="h2">AGORA FALTA POUCO!</p>
+                    <p class="h2">CONCLUA A SUA COMPRA</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container form-confirmation mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-sm-12">
+                <form class="needs-validation" novalidate method="post" action="/Produto/checkout">
+                    <input type="text" name="produto_id" value="@Model.id" hidden />
+                    <div class="form-group">
+                        <label for="nome">*Nome completo</label>
+                        <input required type="text" class="form-control" id="nome" name="nome_completo"
+                               placeholder="Nome completo">
+                        <div class="invalid-feedback">
+                            campo deve ser informado.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="cpf">CPF</label>
+                        <input type="text" class="form-control" id="cpf" name="cpf" placeholder="999.999.999-99">
+                    </div>
+                    <div class="form-group">
+                        <label for="nascimento">*Data de Nascimento</label>
+                        <input required type="date" class="form-control" id="nascimento" name="data_nascimento"
+                               placeholder="Selecione uma data">
+                        <div class="invalid-feedback">
+                            campo deve ser informado.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">*Telefone de Contato</label>
+                        <input required type="tel" class="form-control" id="telefone" name="telefone_contato"
+                               placeholder="(00) 90000-0000">
+                        <div class="invalid-feedback">
+                            campo deve ser informado.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="endereco">*Endereço completo de entrega</label>
+                        <textarea required class="form-control" name="endereco_completo_entrega" id="endereco" rows="3"></textarea>
+                        <small id="enderecoHelp" class="form-text text-muted">rua, número, bairro, cep...</small>
+                        <div class="invalid-feedback">
+                            campo deve ser informado.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="pontoReferencia">*Ponto de referência</label>
+                        <textarea required class="form-control" name="ponto_referencia" id="pontoReferencia" rows="3"></textarea>
+                        <small id="pontoReferenciaHelp" class="form-text text-muted">
+                            cor da casa, estabelecimentos
+                            próximos...
+                        </small>
+                        <div class="invalid-feedback">
+                            campo deve ser informado.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">*E-mail</label>
+                        <input required type="email" class="form-control" id="exampleInputEmail1"
+                               aria-describedby="email" name="email" placeholder="E-mail">
+                        <div class="invalid-feedback">
+                            campo deve ser informado.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="indicacao">*Indicação / Onde conheceu?</label>
+                        <input required type="text" class="form-control" id="indicacao" name="indicacao">
+                        <div class="invalid-feedback">
+                            campo deve ser informado.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefoneIndicacao">Se foi indicação, telefone da pessoa</label>
+                        <input required type="text" class="form-control" id="telefoneIndicacao"
+                               name="telefone_indicacao" placeholder="(00) 90000-0000">
+                        <div class="invalid-feedback">
+                            campo deve ser informado.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="formaPagamento">*Forma de pagamento</label>
+                        <textarea required class="form-control" id="formaPagamento" name="forma_pagamento"
+                                  rows="3"></textarea>
+                        <div class="invalid-feedback">
+                            campo deve ser informado.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="observacoes">Observações</label>
+                        <textarea class="form-control" id="observacoes" name="observacoes" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-danger btn-lg btn-block rounded-pill simulate mx-auto"
+                            id="submit-order">
+                        FINALIZAR COMPRA
+                    </button>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="container" id="selos">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text-center">
+                    <img src="@Url.Content("~/Content/Images/selo1.png")" class="" alt="Responsive image">
+                    <img src="@Url.Content("~/Content/Images/selo2.png")" class="" alt="Responsive image">
+                    <img src="@Url.Content("~/Content/Images/selo3.png")" class="" alt="Responsive image">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

@@ -1,0 +1,91 @@
+﻿@model BAIMI.Context.produto
+
+@{
+    ViewBag.Title = "Detalhes";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>produto</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.descricao_curta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.descricao_curta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.vendidos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.vendidos)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.valor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.valor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.desconto_avista)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.desconto_avista)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.caracteristicas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.caracteristicas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.descricao_longa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.descricao_longa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.url_foto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.url_foto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.entrega_gratis)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.entrega_gratis)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Retornar à Lista", "Index")
+</p>
