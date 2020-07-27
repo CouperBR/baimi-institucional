@@ -20,6 +20,10 @@
     src: url('fonts/gotham-light-italic.ttf');
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .col {
     flex-basis: 0;
     flex-grow: 1; /* isso faz com que a largura fique "automática" */
@@ -27,52 +31,54 @@
 }
 
 /* *********************************Home Page********************************* */
-#logo-baimi{
+#logo-baimi {
     width: 160px;
 }
 
-.menu{
+.menu {
     margin-top: 20px;
 }
 
-.menu-item{
+.menu-item {
     font-family: 'Gothan';
     color: grey;
     padding: 0px 25px 0px 0px;
 }
 
-.menu-item:after{
+    .menu-item:after {
+        content: "";
+        display: block;
+        height: 4px;
+        width: 85%;
+        margin: 10px;
+        color: #0042ff; /* old IE */
+        background-color: #0042ff; /* Modern Browsers */
+    }
+
+.menu-item-red-line:after {
     content: "";
     display: block;
     height: 4px;
     width: 85%;
     margin: 10px;
-    color: #0042ff; /* old IE */
-    background-color: #0042ff; /* Modern Browsers */
+    color: #ff002a !important;
+    ; /* old IE */
+    background-color: #ff002a !important;
+    ; /* Modern Browsers */
 }
 
-.menu-item-red-line:after{
-    content: "";
-    display: block;
-    height: 4px;
-    width: 85%;
-    margin: 10px;
-    color: #ff002a !important;; /* old IE */
-    background-color: #ff002a !important;; /* Modern Browsers */
-}
-
-.red-line{
+.red-line {
     color: #ff002a !important; /* old IE */
-    background-color: #ff002a !important;  /* Modern Browsers */
+    background-color: #ff002a !important; /* Modern Browsers */
 }
 
 /* Second Section*/
-.second-section{
+.second-section {
     background-color: #3e63ed;
     height: 468px;
 }
 
- #icons-container{
+#icons-container {
     margin-top: 40px;
     box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.19);
     max-width: 1237px !important;
@@ -89,11 +95,11 @@
     margin-right: 20px;
 }
 
-.text-container{
+.text-container {
     margin: 15px;
 }
 
-.icon-container img{
+.icon-container img {
     width: 70px;
     margin: 15px;
 }
@@ -114,7 +120,7 @@
 /* Conheça nossos produtos */
 #conheca {
     background-color: #e41848;
-    height:  170px;
+    height: 170px;
     width: auto;
     font-family: 'Gothan';
     color: #ffffff;
@@ -122,23 +128,23 @@
     box-shadow: 6px 15px 10px 0px rgba(0,0,0,0.19);
 }
 
-#conheca .float-left{
-    margin-right: 20px;
-}
+    #conheca .float-left {
+        margin-right: 20px;
+    }
 
-#conheca img{
-    margin-top: 40px;
-    margin-left: 41.64px;
-    width: 125px;
-}
+    #conheca img {
+        margin-top: 40px;
+        margin-left: 41.64px;
+        width: 125px;
+    }
 
-#conheca h1{
-    margin-top: 35px;
-}
+    #conheca h1 {
+        margin-top: 35px;
+    }
 
-#conheca h4{
-    margin-top: 60px;
-}
+    #conheca h4 {
+        margin-top: 60px;
+    }
 
 /* Banner */
 
@@ -147,12 +153,12 @@
 }
 
 /* Produtos */
-#filter{
-    margin-bottom:  70px;
+#filter {
+    margin-bottom: 70px;
     font-family: 'GothanThin';
 }
 
-.product{
+.product {
     margin-bottom: 45px;
 }
 
@@ -162,125 +168,126 @@
     margin-bottom: 55px;
 }
 
-.product-title{
+.product-title {
     font-family: 'Gothan' !important;
 }
 
-.free-shipping{
+.free-shipping {
     font-family: 'Gothan';
     background-color: #e41848;
     color: white;
     padding: 4px;
 }
 
-.portion{
+.portion {
     font-family: 'Gothan' !important;
     margin: 15px 0px 0px 0px;
 }
 
-.amount{
+.amount {
     font-family: 'Gothan';
     margin: 0px;
 }
 
-.in-cash{
+.in-cash {
     font-family: 'GothanThin';
     font-size: 15px;
 }
 
-.buy-now{
+.buy-now {
     font-family: 'Gothan';
     background-color: #e41848;
-    border:none;
+    border: none;
     width: 230px;
     height: 40px;
     margin-top: 30px;
     margin-left: 20px;
 }
 
-.quantity{
+.quantity {
     font-family: 'Gothan';
 }
 
-.way-payment{
+.way-payment {
     font-family: 'Gothan';
 }
 
-.sold{
+.sold {
     font-family: 'Gothan';
     color: #aaaaaa;
     margin: 0px;
 }
 
-.gigabytes{
+.gigabytes {
     color: #e11847;
 }
 
-.description{
+.description {
     font-family: 'Gothan';
 }
 
-.opnion-number{
+.opnion-number {
     font-family: 'GothanLightItalic';
     margin-left: 10px;
 }
 
-#selos{
+#selos {
     margin-bottom: 15px;
 }
 
-#selos img{
-    width: 100px;
-    margin: 10px;
-}
+    #selos img {
+        width: 100px;
+        margin: 10px;
+    }
 
 
 /* DESTAQUE Sobre nós */
-#destaque-aboutus{
+#destaque-aboutus {
     min-height: 250px;
     font-family: 'Gothan';
     color: #ffffff;
     box-shadow: 6px 15px 10px 0px rgba(0,0,0,0.19);
     margin-bottom: 70px;
 }
-#destaque-aboutus img {
-    width: 110px;
-    margin: 70px 0px 0px 0px;
-}
 
-#destaque-aboutus h1{
-    margin: 70px 0px 0px -50px;
-}
+    #destaque-aboutus img {
+        width: 110px;
+        margin: 70px 0px 0px 0px;
+    }
 
-#destaque-aboutus h5{
-    padding-top: 105px;
-}
+    #destaque-aboutus h1 {
+        margin: 70px 0px 0px -50px;
+    }
+
+    #destaque-aboutus h5 {
+        padding-top: 105px;
+    }
 
 /* Sobre nós */
-#menu-about-us li{
+#menu-about-us li {
     font-family: 'Gothan';
     color: grey;
     padding: 0px 20px 0px 0px;
 }
 
-#menu-about-us li:after {
-    content: "";
-    display: block;
-    height: 4px;
-    width: 85%;
-    margin: 10px;
-    color: #0042ff; /* old IE */
-    background-color: #0042ff; /* Modern Browsers */
-}
+    #menu-about-us li:after {
+        content: "";
+        display: block;
+        height: 4px;
+        width: 85%;
+        margin: 10px;
+        color: #0042ff; /* old IE */
+        background-color: #0042ff; /* Modern Browsers */
+    }
 
-#about-us{
+#about-us {
     font-family: 'Gothan';
     color: black;
     margin-bottom: 40px;
 }
 
 /* Talk with us */
-#destaque-talk-us{
+#destaque-talk-us {
     min-height: 150px;
     background-color: #ff1148;
     font-family: 'Gothan';
@@ -289,26 +296,26 @@
     margin-bottom: 70px;
 }
 
-#destaque-talk-us img {
-    width: 110px;
-    margin: 40px 0px 0px 25px;
-}
+    #destaque-talk-us img {
+        width: 110px;
+        margin: 40px 0px 0px 25px;
+    }
 
-#destaque-talk-us h1{
-    margin: 50px 0px 0px -50px;
-}
+    #destaque-talk-us h1 {
+        margin: 50px 0px 0px -50px;
+    }
 
 
 /********************************** Tela do produto *******************************/
-#product-first-destaque{
+#product-first-destaque {
     min-height: 250px;
     font-family: 'Gothan';
     padding: 90px;
 }
 
-#product-first-destaque h1{
-    color: #000000;
-}
+    #product-first-destaque h1 {
+        color: #000000;
+    }
 
 #product-second-destaque {
     min-height: 165px;
@@ -316,20 +323,20 @@
     color: white;
 }
 
-#product-second-destaque p.h5{
-    margin-top: 70px;
-}
+    #product-second-destaque p.h5 {
+        margin-top: 70px;
+    }
 
-#product-second-destaque p.h2{
-    margin: 40px 0px -5px 0px;
-}
+    #product-second-destaque p.h2 {
+        margin: 40px 0px -5px 0px;
+    }
 
-#product-second-destaque img{
-    width: 130px;
-    margin-top: 40px;
-}
+    #product-second-destaque img {
+        width: 130px;
+        margin-top: 40px;
+    }
 
-#product-image{
+#product-image {
     margin: 35px auto auto auto;
     width: 450px;
     height: 500px;
@@ -339,41 +346,41 @@
     box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.14);
 }
 
-#product-image img {
-    width: 300px;
-}
+    #product-image img {
+        width: 300px;
+    }
 
-#product-specifications{
+#product-specifications {
     margin-top: 25px;
 }
 
-p.product-title{
+p.product-title {
     margin: 0px;
 }
 
-p.free-shipping.h3{
+p.free-shipping.h3 {
     width: 278px;
 }
 
-p.amount.h1{
+p.amount.h1 {
     font-size: xxx-large;
     margin-bottom: 0px;
 }
 
-p.portion.h2{
+p.portion.h2 {
     font-size: xxx-large;
     margin-bottom: 0px;
 }
 
-p.in-cash.h4{
+p.in-cash.h4 {
     font-size: 22px;
 }
 
-.botoes-compra{
+.botoes-compra {
     margin: 20px 0px 20px 0px
 }
 
-.buy{
+.buy {
     font-family: 'Gothan';
     font-size: 15px;
     height: 75px;
@@ -383,7 +390,7 @@ p.in-cash.h4{
     color: black;
 }
 
-.add-cart{
+.add-cart {
     font-family: 'Gothan';
     font-size: 11px;
     height: 75px;
@@ -393,28 +400,28 @@ p.in-cash.h4{
     color: black;
 }
 
-.simulate{
-    background-color:  #ff1148;
+.simulate {
+    background-color: #ff1148;
     margin-bottom: 50px;
 }
 
-#product-div{
+#product-div {
     margin: 1px auto auto auto;
     -webkit-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.14);
     -moz-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.14);
     box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.14);
 }
 
-.features{
+.features {
     font-family: 'Gothan';
 }
 
-.evaluations{
+.evaluations {
     margin: 0px -60px -20px -60px;
     background-color: #ffffff;
 }
 
-.evaluation-box{
+.evaluation-box {
     height: 400px;
     padding: 50px 20px 0px 20px;
     -webkit-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.14);
@@ -422,12 +429,12 @@ p.in-cash.h4{
     box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.14);
 }
 
-.evaluation-box p{
-    font-family: 'Gothan';
-}
+    .evaluation-box p {
+        font-family: 'Gothan';
+    }
 
 /* Talk with us */
-#destaque-talk-us-produto{
+#destaque-talk-us-produto {
     min-height: 150px;
     background-color: #ff1148;
     font-family: 'Gothan';
@@ -437,62 +444,62 @@ p.in-cash.h4{
     margin-top: 50px;
 }
 
-#destaque-talk-us-produto img {
-    width: 110px;
-    margin: 40px 0px 0px 25px;
-}
+    #destaque-talk-us-produto img {
+        width: 110px;
+        margin: 40px 0px 0px 25px;
+    }
 
-#destaque-talk-us-produto h1{
-    margin: 50px 0px 0px -50px;
-}
+    #destaque-talk-us-produto h1 {
+        margin: 50px 0px 0px -50px;
+    }
 
 
 /********************************** Fim Tela do produto *******************************/
 
 /********************************** Tela Complete Order *******************************/
 
-#complete-red-destaque .text-center{
+#complete-red-destaque .text-center {
     margin-top: 40px;
 }
 
-.form-confirmation button{
+.form-confirmation button {
     width: 70%;
 }
 
 /********************************** FIM Tela Complete Order *******************************/
 
-#completed-destaque{
+#completed-destaque {
     min-height: 250px;
     font-family: 'Gothan';
     padding: 80px;
     color: white;
 }
 
-#completed-destaque .h1{
-    padding: 0px 40px 0px 40px;
-}
+    #completed-destaque .h1 {
+        padding: 0px 40px 0px 40px;
+    }
 
-#completed-destaque img{
-    width: 130px;
-}
+    #completed-destaque img {
+        width: 130px;
+    }
 
-#woman-completed-order{
+#woman-completed-order {
     width: 96%;
     box-shadow: 6px 15px 10px 0px rgba(0,0,0,0.19);
 }
 
-#complete-red-second-destaque p{
+#complete-red-second-destaque p {
     margin-top: 50px;
-} 
+}
 
 
 /* GERAL */
-.destaque-azul{
+.destaque-azul {
     background-color: #0042ff;
     font-family: 'Gothan';
 }
 
-.destaque-vermelho{
+.destaque-vermelho {
     background-color: #e41848;
     min-height: 165px;
     font-family: 'Gothan';
@@ -501,98 +508,102 @@ p.in-cash.h4{
 
 
 /* Footer */
-#footer{
-    background-color: #202020; 
+#footer {
+    background-color: #202020;
     margin-top: 50px;
 }
 
-#footer img {
-    padding: 45px;
-}
+    #footer img {
+        padding: 45px;
+    }
 
 /* ********************************* FIM Home Page ********************************* */
 
 /* Media Queries */
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
 
 
-/* *********************************Home Page********************************* */
+    /* *********************************Home Page********************************* */
 
     /* Destaque: conheça */
-    #conheca{
+    #conheca {
         height: auto;
         text-align: center;
         padding-bottom: 20px;
     }
-    #conheca img{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
+
+        #conheca img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
     /* Destaque: sobre nós */
-    #destaque-aboutus{
+    #destaque-aboutus {
         padding-top: 25px;
     }
-    #destaque-aboutus h1{
-        margin: 30px 0px 0px 0px;
-        font-size: xx-large;
-        text-align: center;
-    }
-    #destaque-aboutus img{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
 
-    #destaque-aboutus h5{
-        padding: 22px;
-        text-align: center;
-    }
+        #destaque-aboutus h1 {
+            margin: 30px 0px 0px 0px;
+            font-size: xx-large;
+            text-align: center;
+        }
+
+        #destaque-aboutus img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #destaque-aboutus h5 {
+            padding: 22px;
+            text-align: center;
+        }
 
     /* Produtos */
-    .product{
+    .product {
         margin-left: 100px;
         font-size: 14px;
     }
 
-    .free-shipping{
+    .free-shipping {
         font-size: 9px;
     }
 
-    .product-img{
+    .product-img {
         margin: 0px 25px 3px -25px;
     }
 
-    .amount{
+    .amount {
         font-size: 19px;
     }
 
-    .buy-now{
+    .buy-now {
         margin-left: -45px;
     }
 
     /* talk with us */
-    #destaque-talk-us{
+    #destaque-talk-us {
         min-height: auto;
         padding-bottom: 40px;
     }
-    
-    #destaque-talk-us h1{
-        margin: 30px 0px 0px 0px;
-        font-size: xx-large;
-        text-align: center;
-    }
-    #destaque-talk-us img{
-        display: block;
-        margin-left: 30px;
-        margin-right: auto;
-    }
 
-    #destaque-talk-us h5{
-        padding: 22px;
-        text-align: center;
-    }
+        #destaque-talk-us h1 {
+            margin: 30px 0px 0px 0px;
+            font-size: xx-large;
+            text-align: center;
+        }
+
+        #destaque-talk-us img {
+            display: block;
+            margin-left: 30px;
+            margin-right: auto;
+        }
+
+        #destaque-talk-us h5 {
+            padding: 22px;
+            text-align: center;
+        }
     /* ************** FIM HOME PAGE ****************** */
 
 
@@ -604,23 +615,24 @@ p.in-cash.h4{
         text-align: center;
     }
 
-    #product-second-destaque p.h5 {
-        margin: 30px 0px 30px 0px;
-    }
+        #product-second-destaque p.h5 {
+            margin: 30px 0px 30px 0px;
+        }
 
-    #product-image{
+    #product-image {
         width: 340px;
         height: 415px;
     }
 
-    .add-cart{
+    .add-cart {
         margin-top: 5px;
     }
-    .evaluations{
+
+    .evaluations {
         margin: 0px;
     }
 
-    .evaluation-box{
+    .evaluation-box {
         margin-bottom: 10px;
         text-align: center;
     }
@@ -645,7 +657,7 @@ p.in-cash.h4{
         text-align: center;
     }
 
-    #complete-red-destaque{
+    #complete-red-destaque {
         height: 275px;
     }
 
@@ -656,94 +668,98 @@ p.in-cash.h4{
 
 
     /* footer */
-    #footer{
+    #footer {
         height: auto;
     }
 
-    #footer img{
-        margin: 40px 0px 0px 25px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
+        #footer img {
+            margin: 40px 0px 0px 25px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
     /* ******************************** */
 
-    
+
 
     /* ********************************* FIM Home Page ********************************* */
 
 }
-@media only screen and (max-width: 360px){
+
+@media only screen and (max-width: 360px) {
     /* *********************************Home Page********************************* */
     /* Destaque: conheça */
-    #conheca{
+    #conheca {
         height: auto;
         text-align: center;
         padding-bottom: 20px;
     }
-    #conheca img{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
+
+        #conheca img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
     /* ******************************** */
 
     /* Destaque: sobre nós */
-    #destaque-aboutus h1{
+    #destaque-aboutus h1 {
         margin: 30px 0px 0px 0px;
         font-size: xx-large;
         text-align: center;
     }
-    #destaque-aboutus img{
+
+    #destaque-aboutus img {
         display: block;
         margin-left: auto;
         margin-right: auto;
         width: 50%;
     }
 
-    #destaque-aboutus h5{
+    #destaque-aboutus h5 {
         padding: 22px;
         text-align: center;
     }
     /* ******************************** */
 
     /* Produtos */
-    .product{
+    .product {
         margin-left: 50px;
         font-size: 14px;
     }
 
-    .free-shipping{
+    .free-shipping {
         font-size: 14px;
     }
 
-    .product-img{
+    .product-img {
         margin: 0px 25px 3px -25px;
     }
     /* ******************************** */
 
     /* talk with us */
-    #destaque-talk-us{
+    #destaque-talk-us {
         min-height: auto;
         padding-bottom: 40px;
     }
-    
-    #destaque-talk-us h1{
-        margin: 30px 0px 0px 0px;
-        font-size: xx-large;
-        text-align: center;
-    }
-    #destaque-talk-us img{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 30%;
-    }
 
-    #destaque-talk-us h5{
-        padding: 22px;
-        text-align: center;
-    }
+        #destaque-talk-us h1 {
+            margin: 30px 0px 0px 0px;
+            font-size: xx-large;
+            text-align: center;
+        }
+
+        #destaque-talk-us img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 30%;
+        }
+
+        #destaque-talk-us h5 {
+            padding: 22px;
+            text-align: center;
+        }
     /* ******************************** */
 
     /* product page */
@@ -753,15 +769,16 @@ p.in-cash.h4{
         height: 279px;
         padding: 30px;
     }
-    #product-image img {
-        margin-top: -10px;
-    }
 
-    .evaluations{
+        #product-image img {
+            margin-top: -10px;
+        }
+
+    .evaluations {
         margin: 0px;
     }
 
-    .evaluation-box{
+    .evaluation-box {
         margin-bottom: 10px;
         text-align: center;
     }
@@ -770,7 +787,7 @@ p.in-cash.h4{
         margin-bottom: 10px;
     }
 
-    #product-first-destaque{
+    #product-first-destaque {
         text-align: center;
     }
 
@@ -778,9 +795,9 @@ p.in-cash.h4{
         text-align: center;
     }
 
-    #product-second-destaque p.h5 {
-        margin: 30px 0px 20px 0px;
-    }
+        #product-second-destaque p.h5 {
+            margin: 30px 0px 20px 0px;
+        }
 
     #destaque-talk-us-produto img {
         width: 110px;
@@ -798,21 +815,17 @@ p.in-cash.h4{
     /* fim product page */
 
     /* footer */
-    #footer{
+    #footer {
         height: auto;
     }
 
-    #footer img{
-        margin: 40px 0px 0px 25px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
+        #footer img {
+            margin: 40px 0px 0px 25px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
     /* ******************************** */
 
     /* ********************************* FIM Home Page ********************************* */
 }
-
-
-
-

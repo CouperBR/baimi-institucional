@@ -83,3 +83,66 @@ function ValidateForm() {
     return formInvalid;
 }
 
+
+//Simular pagamento
+$("#simular-pagamento").click(function () {
+    if ($('#valor-avista').val()) {
+        let precoProdutoAvista = parseFloat($('#precoProdutoAvista').val());
+        let valorDadoAvista = parseFloat($('#valor-avista').val());
+        let percenturalAVista = Number($('#percentualAVista').val());
+
+        let Z = precoProdutoAvista - valorDadoAvista;
+        let ABC = Z / (1 - (percenturalAVista + 0.01));
+        if (ABC < 0) {
+            return;
+        }
+        $('#simulacao').val('R$ ' + ABC.toFixed(2));
+    }
+
+    return;
+});
+
+$("#fechar-simulacao").click(function () {
+    $('#simulacao').val('');
+});
+
+$(document).ready(function () {
+    var paginas = {
+        menuinicio: '#sect1',
+        menuempresa: '#sect2',
+        menuprodutos: '#sect3',
+        menunoticias: '#sect4'
+    }
+    $(".active li").click(function (event) {
+        $('[id^="sect"]').hide('slow');
+        $(paginas[this.id] || '#sect5').show('slow');
+    });
+
+    $(".item-about-us").on("click", function (event) {
+        console.log();
+        $('#div-nossahistoria').addClass('d-none');
+        $('#div-nossosclientes').addClass('d-none');
+        $('#div-nossospropositos').addClass('d-none');
+        $('#div-nossoslemas').addClass('d-none');
+        switch ($(this).text()) {
+            case 'NOSSA HISTÓRIA':
+                $('#div-nossahistoria').removeClass('d-none');
+                break;
+            case 'NOSSOS CLIENTES':
+                $('#div-nossosclientes').removeClass('d-none');
+                break;
+            case 'NOSSOS PROPÓSITOS':
+                $('#div-nossospropositos').removeClass('d-none');
+                break;
+            case 'NOSSOS LEMAS':
+                $('#div-nossoslemas').removeClass('d-none');
+                break;
+            default:
+                $('#div-nossahistoria').removeClass('d-none');
+                break;
+        }
+    });
+
+});
+
+

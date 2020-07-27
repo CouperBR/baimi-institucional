@@ -3,6 +3,7 @@
 @{
     ViewBag.Title = "VerProduto";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    decimal? precoAvista = 0;
 }
 
 <section>
@@ -46,7 +47,7 @@
                 @try
                 {
                     var parcelas = Model.numero_max_parcelas != null ? Model.numero_max_parcelas : 12;
-                    var valorDividido = Model.valor / parcelas;
+                    dynamic valorDividido = Model.valor / parcelas;
                     var porcentagem = ((decimal)20 / 100) * Model.valor;
                     var descontoAVista = ((decimal)Model.desconto_avista / 100) * Model.valor;
                     <p class="sold">@Model.vendidos VENDIDOS</p>
@@ -54,10 +55,11 @@
                     <p class="description h5">@Model.descricao_curta</p>
                     if (Model.entrega_gratis == null || Convert.ToBoolean(Model.entrega_gratis))
                     {<p class="free-shipping h3">ENTREGA GRÁTIS!</p>}
-                    <p class="portion h2">12X de</p>
-                    <p class="amount h1">R$149,90</p>
+                     <p class="portion h2">@(parcelas)X de</p>
+                     <p class="amount h1">@(valorDividido.ToString("C"))</p>
                     <br>
-                    <p class="in-cash h4">A VISTA (15% OFF): R$1799,00</p>
+                    <p class="in-cash h4">À VISTA (@(Model.desconto_avista)%OFF): R$ @(Model.valor - descontoAVista)</p>
+                    @(precoAvista = Model.valor - descontoAVista)
                 }
                 catch (Exception ex)
                 {
@@ -78,19 +80,48 @@
                             @Html.HiddenFor(m => m.id)
                             <button class="btn btn-default rounded-pill btn-lg buy" type="submit">COMPRAR AGORA</button>
                         </form>
-                        
+
                     </div>
                     @*<div class="col-lg-6 col-md-12 col-sm-12">
-                        <button class="btn btn-default rounded-pill btn-lg add-cart" type="submit">
-                            ADICIONAR AO
-                            CARRINHO
-                        </button>
-                    </div>*@
+                <button class="btn btn-default rounded-pill btn-lg add-cart" type="submit">
+                    ADICIONAR AO
+                    CARRINHO
+                </button>
+            </div>*@
                 </div>
-                <button type="button" class="btn btn-danger btn-lg btn-block rounded-pill simulate">
+                <button type="button" data-toggle="modal" data-target="#exampleModal" class="btn btn-danger btn-lg btn-block rounded-pill simulate">
                     simule agora o
                     seu pagamento
                 </button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label for="avista">Valor da entrada no débito ou à vista:</label>
+                                    <input type="number" step=".01" class="form-control" id="valor-avista" aria-describedby="emailHelp" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleFormControlInput1">Simulação:</label>
+                                    <input disabled type="text" class="form-control" placeholder="R$" id="simulacao">
+                                </div>
+                                <input type="hidden" id="precoProdutoAvista" value="@(Convert.ToDecimal(precoAvista).ToString(System.Globalization.CultureInfo.InvariantCulture))" />
+                                <input type="hidden" id="percentualAVista" value="@(((decimal)Model.desconto_avista / 100).ToString(System.Globalization.CultureInfo.InvariantCulture))" />
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal" id="fechar-simulacao">Fechar</button>
+                                <button type="button" class="btn btn-primary" id="simular-pagamento">Simular</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="container" id="selos">
                 <div class="row">
@@ -106,69 +137,13 @@
             <div class="container">
                 <p class="h4 features text-center">Características</p>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis imperdiet tellus, in
-                    porttitor urna ultrices eu. Aliquam et magna vel massa blandit euismod. Donec elit lorem,
-                    vulputate ut posuere in, pretium a est. Etiam accumsan congue tellus, a pretium leo tincidunt
-                    et. Curabitur imperdiet maximus dui ac dignissim. Pellentesque sed commodo nisi. In hac
-                    habitasse platea dictumst. Integer vitae nibh varius, sollicitudin tortor quis, faucibus ex.
-                    Etiam cursus eros leo, id condimentum justo imperdiet ut. Ut non pellentesque nibh, ut volutpat
-                    eros. Praesent posuere eget mi at ultricies.
-
-                    Fusce felis eros, dapibus eu consequat eget, mattis gravida mauris. Interdum et malesuada fames
-                    ac ante ipsum primis in faucibus. Proin pulvinar quis sem ac feugiat. Sed ornare scelerisque
-                    leo, at auctor eros faucibus posuere. Nullam efficitur pulvinar mollis. Curabitur dapibus sapien
-                    ac libero fermentum dignissim. Donec viverra rhoncus mauris, ut malesuada enim varius congue.
-
-                    Suspendisse blandit odio pulvinar quam imperdiet, quis aliquam risus laoreet. Nullam iaculis,
-                    risus eget pulvinar elementum, nunc dui maximus mauris, eu vehicula arcu ex ut arcu. Phasellus
-                    ac dapibus est. Donec tempus tellus sit amet purus feugiat elementum. Pellentesque a efficitur
-                    diam. Mauris vehicula sagittis mattis. Etiam sit amet nisl lacinia, condimentum justo lobortis,
-                    bibendum nunc. Vivamus finibus pellentesque risus eget ultricies. Donec et augue cursus, congue
-                    mauris a, maximus est. Maecenas malesuada sodales mauris, eu pretium quam tristique at.
-
-                    Donec lobortis quam nec elit posuere maximus. Aenean laoreet aliquet augue nec hendrerit.
-                    Aliquam congue sem efficitur, consectetur erat nec, pulvinar nulla. Nunc eu egestas ligula, sed
-                    auctor nunc. Pellentesque et ultricies arcu. Etiam scelerisque dui eget nisi consequat, feugiat
-                    dapibus magna accumsan. Vestibulum vel neque felis. Vestibulum vestibulum ligula aliquet, mattis
-                    metus ut, dignissim odio. Phasellus bibendum dignissim sapien, a rutrum velit ornare id. Nunc a
-                    feugiat est, sed tempor nulla. Maecenas faucibus a ex non cursus. Suspendisse sapien mi, aliquet
-                    at arcu eu, venenatis tempus risus. Praesent mattis condimentum justo, eu ornare mauris
-                    dignissim vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt metus et
-                    tellus congue pharetra. Donec ut est vel diam pharetra efficitur.
+                    @Model.caracteristicas
                 </p>
             </div>
             <div class="container">
                 <p class="h4 features text-center">Descrição</p>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis imperdiet tellus, in
-                    porttitor urna ultrices eu. Aliquam et magna vel massa blandit euismod. Donec elit lorem,
-                    vulputate ut posuere in, pretium a est. Etiam accumsan congue tellus, a pretium leo tincidunt
-                    et. Curabitur imperdiet maximus dui ac dignissim. Pellentesque sed commodo nisi. In hac
-                    habitasse platea dictumst. Integer vitae nibh varius, sollicitudin tortor quis, faucibus ex.
-                    Etiam cursus eros leo, id condimentum justo imperdiet ut. Ut non pellentesque nibh, ut volutpat
-                    eros. Praesent posuere eget mi at ultricies.
-
-                    Fusce felis eros, dapibus eu consequat eget, mattis gravida mauris. Interdum et malesuada fames
-                    ac ante ipsum primis in faucibus. Proin pulvinar quis sem ac feugiat. Sed ornare scelerisque
-                    leo, at auctor eros faucibus posuere. Nullam efficitur pulvinar mollis. Curabitur dapibus sapien
-                    ac libero fermentum dignissim. Donec viverra rhoncus mauris, ut malesuada enim varius congue.
-
-                    Suspendisse blandit odio pulvinar quam imperdiet, quis aliquam risus laoreet. Nullam iaculis,
-                    risus eget pulvinar elementum, nunc dui maximus mauris, eu vehicula arcu ex ut arcu. Phasellus
-                    ac dapibus est. Donec tempus tellus sit amet purus feugiat elementum. Pellentesque a efficitur
-                    diam. Mauris vehicula sagittis mattis. Etiam sit amet nisl lacinia, condimentum justo lobortis,
-                    bibendum nunc. Vivamus finibus pellentesque risus eget ultricies. Donec et augue cursus, congue
-                    mauris a, maximus est. Maecenas malesuada sodales mauris, eu pretium quam tristique at.
-
-                    Donec lobortis quam nec elit posuere maximus. Aenean laoreet aliquet augue nec hendrerit.
-                    Aliquam congue sem efficitur, consectetur erat nec, pulvinar nulla. Nunc eu egestas ligula, sed
-                    auctor nunc. Pellentesque et ultricies arcu. Etiam scelerisque dui eget nisi consequat, feugiat
-                    dapibus magna accumsan. Vestibulum vel neque felis. Vestibulum vestibulum ligula aliquet, mattis
-                    metus ut, dignissim odio. Phasellus bibendum dignissim sapien, a rutrum velit ornare id. Nunc a
-                    feugiat est, sed tempor nulla. Maecenas faucibus a ex non cursus. Suspendisse sapien mi, aliquet
-                    at arcu eu, venenatis tempus risus. Praesent mattis condimentum justo, eu ornare mauris
-                    dignissim vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt metus et
-                    tellus congue pharetra. Donec ut est vel diam pharetra efficitur.
+                    @Model.descricao_longa
                 </p>
             </div>
             <div class="container">

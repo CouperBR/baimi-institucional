@@ -6,7 +6,7 @@ ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.mi
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <_PublishTargetUrl>C:\projetos\freelas\Baimi\website\BAIMI\BAIMI\bin\Release\Publish</_PublishTargetUrl>
+    <_PublishTargetUrl>C:\projetos\freelas\Baimi\git\baimi-institucional\BAIMI\bin\Release\Publish</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/Antlr3.Runtime.dll">
@@ -16,10 +16,10 @@ ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.mi
       <publishTime>10/09/2013 16:29:20</publishTime>
     </File>
     <File Include="bin/BAIMI.dll">
-      <publishTime>07/16/2020 18:16:18</publishTime>
+      <publishTime>07/27/2020 19:37:02</publishTime>
     </File>
     <File Include="bin/BAIMI.pdb">
-      <publishTime>07/16/2020 18:16:18</publishTime>
+      <publishTime>07/27/2020 19:37:02</publishTime>
     </File>
     <File Include="bin/BCrypt.Net-Next.dll">
       <publishTime>04/14/2020 16:10:48</publishTime>
@@ -283,7 +283,7 @@ ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.mi
       <publishTime>07/13/2020 17:53:19</publishTime>
     </File>
     <File Include="Content/css/main.css">
-      <publishTime>07/08/2020 20:44:14</publishTime>
+      <publishTime>07/20/2020 18:36:19</publishTime>
     </File>
     <File Include="Content/css/normalize.css">
       <publishTime>07/08/2020 18:09:08</publishTime>
@@ -340,7 +340,7 @@ ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.mi
       <publishTime>07/08/2020 18:09:16</publishTime>
     </File>
     <File Include="Content/js/main.js">
-      <publishTime>07/13/2020 18:55:46</publishTime>
+      <publishTime>07/27/2020 19:28:47</publishTime>
     </File>
     <File Include="Content/Site.css">
       <publishTime>05/26/2020 21:38:09</publishTime>
@@ -439,7 +439,7 @@ ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.mi
       <publishTime>05/26/2020 21:38:09</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>07/14/2020 19:50:43</publishTime>
+      <publishTime>07/27/2020 19:36:27</publishTime>
     </File>
     <File Include="Views/Produto/Checkout.cshtml">
       <publishTime>07/14/2020 19:59:38</publishTime>
@@ -448,7 +448,7 @@ ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.mi
       <publishTime>07/14/2020 18:38:17</publishTime>
     </File>
     <File Include="Views/Produto/Create.cshtml">
-      <publishTime>07/10/2020 18:59:25</publishTime>
+      <publishTime>07/27/2020 18:26:50</publishTime>
     </File>
     <File Include="Views/Produto/Delete.cshtml">
       <publishTime>07/08/2020 19:33:28</publishTime>
@@ -457,31 +457,31 @@ ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.mi
       <publishTime>07/08/2020 19:33:11</publishTime>
     </File>
     <File Include="Views/Produto/Edit.cshtml">
-      <publishTime>07/13/2020 17:42:01</publishTime>
+      <publishTime>07/27/2020 18:26:38</publishTime>
     </File>
     <File Include="Views/Produto/Index.cshtml">
       <publishTime>07/08/2020 19:36:36</publishTime>
     </File>
     <File Include="Views/Produto/VerProduto.cshtml">
-      <publishTime>07/14/2020 18:16:59</publishTime>
+      <publishTime>07/27/2020 19:07:51</publishTime>
     </File>
     <File Include="Views/Shared/Error.cshtml">
       <publishTime>05/26/2020 21:38:09</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>07/13/2020 18:27:59</publishTime>
+      <publishTime>07/27/2020 19:32:59</publishTime>
     </File>
     <File Include="Views/Shared/_LayoutAdmin.cshtml">
       <publishTime>07/13/2020 17:45:03</publishTime>
     </File>
     <File Include="Views/Web.config">
-      <publishTime>05/26/2020 21:38:09</publishTime>
+      <publishTime>07/16/2020 19:19:34</publishTime>
     </File>
     <File Include="Views/_ViewStart.cshtml">
       <publishTime>05/26/2020 21:38:09</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>07/15/2020 22:47:18</publishTime>
+      <publishTime>07/27/2020 19:14:35</publishTime>
     </File>
   </ItemGroup>
 </Project>
