@@ -290,6 +290,7 @@ namespace BAIMI.Controllers
             {
                 if (compra.produto_id > 0)
                 {
+                    compra.data_compra = DateTime.Now;
                     compra.cpf = string.IsNullOrEmpty(compra.cpf) ? Regex.Replace(compra.cpf, "[^0-9]", "") : string.Empty;
                     db.compra.Add(compra);
                     db.SaveChanges();

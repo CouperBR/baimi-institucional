@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
+using System.Net;
 using System.Net.Mail;
 using System.Web;
 using System.Web.Mvc;
@@ -12,6 +13,8 @@ namespace BAIMI.Controllers
     public class ContatoController : Controller
     {
         private static readonly NLog.Logger Logger = NLog.LogManager.GetCurrentClassLogger();
+
+        private BaimiContext db = new BaimiContext();
 
         [HttpPost]
         public ActionResult Contactar(contato contato)
@@ -52,6 +55,88 @@ namespace BAIMI.Controllers
                 return Json(new { success = false, responseText = "Ocorreu um erro ao enviar sua mensagem." }, JsonRequestBehavior.AllowGet);
 
             }
+        }
+
+        public ActionResult Index()
+        {
+            try
+            {
+                return View(db.contato.OrderByDescending(_ => _.data).ToList());
+
+            }
+            catch (Exception ex)
+            {
+                Logger.Error(ex, "Erro ao tentar mostrar a lista de contatos.");
+                return View();
+            }
+        }
+
+        // GET: Contato/Details/5
+        public ActionResult Details(int? id)
+        {
+            try
+            {
+                if (id == null)
+                {
+                    return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+                }
+                contato contato = db.contato.Find(id);
+                if (contato == null)
+                {
+                    return HttpNotFound();
+                }
+                return View(contato);
+
+            }
+            catch (Exception ex)
+            {
+                Logger.Error(ex, "Erro ao tentar mostrar os detalhes do contato. Id: ", id);
+                return View();
+            }
+        }
+
+        // GET: Contato/Delete/5
+        public ActionResult Delete(int? id)
+        {
+            try
+            {
+                if (id == null)
+                {
+                    return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+                }
+                contato contato = db.contato.Find(id);
+                if (contato == null)
+                {
+                    return HttpNotFound();
+                }
+                return View(contato);
+            }
+            catch (Exception ex)
+            {
+                Logger.Error(ex, "Erro ao tentar deletar um contato. Id:", id);
+                return View();
+            }
+
+        }
+
+        // POST: Produto/Delete/5
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeleteConfirmed(int id)
+        {
+            contato contato = db.contato.Find(id);
+            db.contato.Remove(contato);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+                db.Dispose();
+            }
+            base.Dispose(disposing);
         }
     }
 }

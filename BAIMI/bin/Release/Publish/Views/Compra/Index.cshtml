@@ -1,0 +1,100 @@
+﻿@model IEnumerable<BAIMI.Context.compra>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Index</h2>
+
+@*<p>
+    @Html.ActionLink("Create New", "Create")
+</p>*@
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.data_compra)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nome_completo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cpf)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.data_nascimento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.telefone_contato)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.endereco_completo_entrega)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ponto_referencia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.indicacao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.telefone_indicacao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.forma_pagamento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.observacoes)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.data_compra)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nome_completo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cpf)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.data_nascimento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.telefone_contato)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.endereco_completo_entrega)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ponto_referencia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.indicacao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.telefone_indicacao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.forma_pagamento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.observacoes)
+        </td>
+        <td>
+            @*@Html.ActionLink("Edit", "Edit", new { id = item.id }) |*@
+            @Html.ActionLink("Details", "Details", new { id = item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.id })
+        </td>
+    </tr>
+}
+
+</table>

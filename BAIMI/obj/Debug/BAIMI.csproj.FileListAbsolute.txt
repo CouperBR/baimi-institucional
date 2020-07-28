@@ -193,8 +193,8 @@ C:\projetos\freelas\Baimi\git\baimi-institucional\BAIMI\bin\pt-br\System.Web.Raz
 C:\projetos\freelas\Baimi\git\baimi-institucional\BAIMI\bin\pt-br\System.Web.WebPages.resources.dll
 C:\projetos\freelas\Baimi\git\baimi-institucional\BAIMI\bin\pt-br\System.Web.WebPages.Deployment.resources.dll
 C:\projetos\freelas\Baimi\git\baimi-institucional\BAIMI\bin\pt-br\System.Web.WebPages.Razor.resources.dll
-C:\projetos\freelas\Baimi\git\baimi-institucional\BAIMI\obj\Debug\BAIMI.csprojAssemblyReference.cache
 C:\projetos\freelas\Baimi\git\baimi-institucional\BAIMI\obj\Debug\BAIMI.csproj.CoreCompileInputs.cache
 C:\projetos\freelas\Baimi\git\baimi-institucional\BAIMI\obj\Debug\BAIMI.csproj.CopyComplete
 C:\projetos\freelas\Baimi\git\baimi-institucional\BAIMI\obj\Debug\BAIMI.dll
 C:\projetos\freelas\Baimi\git\baimi-institucional\BAIMI\obj\Debug\BAIMI.pdb
+C:\projetos\freelas\Baimi\git\baimi-institucional\BAIMI\obj\Debug\BAIMI.csprojAssemblyReference.cache

@@ -16,10 +16,10 @@ ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.mi
       <publishTime>10/09/2013 16:29:20</publishTime>
     </File>
     <File Include="bin/BAIMI.dll">
-      <publishTime>07/27/2020 19:37:02</publishTime>
+      <publishTime>07/27/2020 21:06:16</publishTime>
     </File>
     <File Include="bin/BAIMI.pdb">
-      <publishTime>07/27/2020 19:37:02</publishTime>
+      <publishTime>07/27/2020 21:06:16</publishTime>
     </File>
     <File Include="bin/BCrypt.Net-Next.dll">
       <publishTime>04/14/2020 16:10:48</publishTime>
@@ -283,7 +283,7 @@ ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.mi
       <publishTime>07/13/2020 17:53:19</publishTime>
     </File>
     <File Include="Content/css/main.css">
-      <publishTime>07/20/2020 18:36:19</publishTime>
+      <publishTime>07/27/2020 21:05:10</publishTime>
     </File>
     <File Include="Content/css/normalize.css">
       <publishTime>07/08/2020 18:09:08</publishTime>
@@ -432,6 +432,30 @@ ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.mi
     <File Include="Views/Admin/LoginScreen.cshtml">
       <publishTime>07/08/2020 18:41:39</publishTime>
     </File>
+    <File Include="Views/Compra/Create.cshtml">
+      <publishTime>07/27/2020 20:28:41</publishTime>
+    </File>
+    <File Include="Views/Compra/Delete.cshtml">
+      <publishTime>07/27/2020 20:28:42</publishTime>
+    </File>
+    <File Include="Views/Compra/Details.cshtml">
+      <publishTime>07/27/2020 20:45:28</publishTime>
+    </File>
+    <File Include="Views/Compra/Edit.cshtml">
+      <publishTime>07/27/2020 20:28:43</publishTime>
+    </File>
+    <File Include="Views/Compra/Index.cshtml">
+      <publishTime>07/27/2020 20:42:24</publishTime>
+    </File>
+    <File Include="Views/Contato/Delete.cshtml">
+      <publishTime>07/27/2020 20:24:09</publishTime>
+    </File>
+    <File Include="Views/Contato/Details.cshtml">
+      <publishTime>07/27/2020 20:23:43</publishTime>
+    </File>
+    <File Include="Views/Contato/Index.cshtml">
+      <publishTime>07/27/2020 20:23:26</publishTime>
+    </File>
     <File Include="Views/Home/About.cshtml">
       <publishTime>05/26/2020 21:38:09</publishTime>
     </File>
@@ -439,7 +463,7 @@ ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.mi
       <publishTime>05/26/2020 21:38:09</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>07/27/2020 19:36:27</publishTime>
+      <publishTime>07/27/2020 21:05:54</publishTime>
     </File>
     <File Include="Views/Produto/Checkout.cshtml">
       <publishTime>07/14/2020 19:59:38</publishTime>
@@ -463,13 +487,13 @@ ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.mi
       <publishTime>07/08/2020 19:36:36</publishTime>
     </File>
     <File Include="Views/Produto/VerProduto.cshtml">
-      <publishTime>07/27/2020 19:07:51</publishTime>
+      <publishTime>07/27/2020 21:06:01</publishTime>
     </File>
     <File Include="Views/Shared/Error.cshtml">
       <publishTime>05/26/2020 21:38:09</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>07/27/2020 19:32:59</publishTime>
+      <publishTime>07/27/2020 21:04:05</publishTime>
     </File>
     <File Include="Views/Shared/_LayoutAdmin.cshtml">
       <publishTime>07/13/2020 17:45:03</publishTime>

@@ -49,6 +49,8 @@ namespace BAIMI.Context
 
         public string observacoes { get; set; }
 
+        public DateTime? data_compra { get; set; }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<compra_produto> compra_produto { get; set; }
 

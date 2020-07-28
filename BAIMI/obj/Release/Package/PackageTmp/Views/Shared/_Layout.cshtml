@@ -9,13 +9,15 @@
     @Styles.Render("~/Content/css/bootstrap.min.css")
     @Styles.Render("~/Content/css/iziToast.min.css")
     @Styles.Render("~/Content/css/main.css")
+    @Styles.Render("~/Content/css/fontawesome.min.css")
+    @Styles.Render("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
 </head>
 <body>
 
     <header>
         <!-- NAVBAR -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="@Url.Action("/")"><img src="@Url.Content("~/Content/images/logo-baimi.png")" class="img-fluid d-block" id="logo-baimi" alt="Responsive image"></a>
+            <a class="navbar-brand" href="@Url.Action("Index", "Home")"><img src="@Url.Content("~/Content/images/logo-baimi.png")" class="img-fluid d-block" id="logo-baimi" alt="Responsive image"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -32,6 +34,10 @@
     </header>
     <!-- HEADER -->
     @RenderBody()
+
+    <a href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
     <!-- Footer -->
     <footer class="page-footer font-small" id="footer">
         <div class="footer-copyright">
