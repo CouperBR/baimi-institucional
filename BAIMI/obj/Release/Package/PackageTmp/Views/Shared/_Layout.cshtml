@@ -22,12 +22,14 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="list-inline mx-auto text-center menu">
-                    <a href="#products-section"><li class="nav-item list-inline-item menu-item menu-item-red-line">NOSSOS PRODUTOS</li></a>
-                    <a href="#about-section"><li class="nav-item list-inline-item menu-item ">NOSSA HISTÓRIA</li></a>
-                    <a href="#about-section"><li class="nav-item list-inline-item menu-item ">NOSSOS PROPÓSITOS</li></a>
-                    <a href="#talk-section"><li class="nav-item list-inline-item menu-item ">FALE CONOSCO</li></a>
-                </ul>
+                @if (ViewBag.HideNavBar == null)
+                {
+                    <ul class="list-inline mx-auto text-center menu">
+                        <a href="#products-section"><li class="nav-item list-inline-item menu-item menu-item-red-line">PRODUTOS</li></a>
+                        <a href="#about-section"><li class="nav-item list-inline-item menu-item ">QUEM SOMOS</li></a>
+                        <a href="#talk-section"><li class="nav-item list-inline-item menu-item ">FALE CONOSCO</li></a>
+                    </ul>
+                }
             </div>
         </nav>
         <!-- NAVBAR -->

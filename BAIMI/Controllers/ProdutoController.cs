@@ -256,6 +256,7 @@ namespace BAIMI.Controllers
         {
             try
             {
+                ViewBag.HideNavBar = true;
                 var produto = db.produto.Find(id);
                 return View(produto);
             }

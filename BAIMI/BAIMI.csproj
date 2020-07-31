@@ -177,6 +177,7 @@
     <Content Include="Content\css\main.css" />
     <Content Include="Content\css\normalize.css" />
     <Content Include="Content\images\Banner-paginicial.png" />
+    <Content Include="Content\images\banner-principal.png" />
     <Content Include="Content\images\blue-star.png" />
     <Content Include="Content\images\completed-order-woman.png" />
     <Content Include="Content\images\icon-carteira.png" />

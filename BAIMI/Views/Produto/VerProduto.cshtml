@@ -55,11 +55,11 @@
                     <p class="description h5">@Model.descricao_curta</p>
                     if (Model.entrega_gratis == null || Convert.ToBoolean(Model.entrega_gratis))
                     {<p class="free-shipping h3">ENTREGA GRÁTIS!</p>}
-                     <p class="portion h2">@(parcelas)X de</p>
-                     <p class="amount h1">@(valorDividido.ToString("C"))</p>
+                    <p class="portion h2">@(parcelas)X de @(valorDividido.ToString("C"))</p>
+                    <p class="amount h1"></p>
                     <br>
                     <p class="in-cash h4">À VISTA (@(Model.desconto_avista)%OFF): R$ @(Model.valor - descontoAVista)</p>
-                    @(precoAvista = Model.valor - descontoAVista)
+                    precoAvista = Model.valor - descontoAVista;
                 }
                 catch (Exception ex)
                 {
@@ -74,25 +74,27 @@
                         <option>Presencial</option>
                     </select>
                 </div>
+                
                 <div class="row botoes-compra">
+                    <div class="col-lg-12 col-sm-12 col-md-12 mb-1">
+                        <button type="button" data-toggle="modal" data-target="#exampleModal" class="btn btn-danger btn-lg btn-block rounded-pill simulate">
+                            simule agora o
+                            seu pagamento
+                        </button>
+                    </div>
                     <div class="col-lg-12 col-md-12 col-sm-12">
                         <form action="/Produto/comprar" method="post">
                             @Html.HiddenFor(m => m.id)
-                            <button class="btn btn-default rounded-pill btn-lg buy" type="submit">COMPRAR AGORA</button>
+                            <button class="btn btn-primary btn-lg btn-block rounded-pill buy" type="submit">COMPRAR AGORA</button>
                         </form>
-
                     </div>
                     @*<div class="col-lg-6 col-md-12 col-sm-12">
-                <button class="btn btn-default rounded-pill btn-lg add-cart" type="submit">
-                    ADICIONAR AO
-                    CARRINHO
-                </button>
-            </div>*@
+            <button class="btn btn-default rounded-pill btn-lg add-cart" type="submit">
+                ADICIONAR AO
+                CARRINHO
+            </button>
+        </div>*@
                 </div>
-                <button type="button" data-toggle="modal" data-target="#exampleModal" class="btn btn-danger btn-lg btn-block rounded-pill simulate">
-                    simule agora o
-                    seu pagamento
-                </button>
                 <!-- Modal -->
                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
